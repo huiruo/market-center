@@ -4,8 +4,16 @@
 
 #### test api
 ``
-http://localhost:8800/api/?test=123&b=2
+http://localhost:8888/api/update
+{
+    "admin":"12233",
+    "password":"test"
+}
+
+
+http://localhost:8888/api/get?id=12344
 ```
+
 
 ```
 yarn add @typescript-eslint/parser -D

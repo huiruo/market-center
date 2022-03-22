@@ -1,38 +1,41 @@
-import http from 'http';
+import express, { Application, json, Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 import fs from 'fs';
-import url from 'url';
-import querystring from 'querystring';
 
-const app = http.createServer((req: any, res: any) => {
-  console.log('接口被访问：', res.url);
+const app:Application = express();
 
-  res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+app.use(cors());
 
-  if (req.url.indexOf('/favicon.ico') === -1) {
-    if (req.url.indexOf('/api') !== -1) {
-      // 处理地址栏的数据
-      const urlObj = url.parse(req.url, true);
-      console.log(urlObj.query);
-      // 非地址栏的数据
-      let noAddressData = '';
-      req.on('data', (chunk: any) => {
-        noAddressData += chunk;
-      });
-      req.on('end', () => {
-        console.log('非地址栏的数据：', querystring.parse(noAddressData));
-      });
-    } else {
-      try {
-        const path = req.url === '/' ? './public/index.html' : req.url;
-        console.log('直接将html结果返回给浏览器', path);
-        const html = fs.readFileSync(path);
-        res.write(html);
-      } catch (error) {
-        console.log('error', error);
-      }
-    }
-  }
-  res.end();
+app.use(express.urlencoded({ extended: false }));
+
+// 内置了 body 解析: https://expressjs.com/en/api.html#express.json
+app.use(json());
+
+app.get('/', (req:Request, res:Response, next:NextFunction) => {
+  console.log('req', req.baseUrl);
+  const path = './public/index.html';
+  const html = fs.readFileSync(path);
+  res.write(html);
 });
 
-app.listen(8800);
+app.post('/api/update', (req:Request, res:Response) => {
+  console.log(req.url, 'req:', req.body);
+  res.status(200).send({
+    code:200,
+    msg:'请求成功'
+  });
+});
+
+app.get('/api/get', (req:Request, res:Response) => {
+  const params = req.query;
+  console.log('req:', params);
+  res.status(200).json({
+    code: 0,
+    msg:'请求成功',
+    params
+  });
+});
+
+app.listen(8888, function () {
+  console.log('app is runing at port 8888');
+});
