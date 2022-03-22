@@ -1,0 +1,22 @@
+{
+  "name": "market-center",
+  "version": "1.0.0",
+  "description": "行情中心",
+  "scripts": {
+    "dev": "ts-node ./src/app.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.7.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "binance": "^2.0.27",
+    "eslint": "^8.11.0",
+    "express": "^4.17.3",
+    "log4js": "^6.4.3",
+    "mongoose": "^6.2.7",
+    "typescript": "^4.6.2"
+  }
+}
