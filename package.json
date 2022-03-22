@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "行情中心",
   "scripts": {
-    "dev": "ts-node ./src/app.ts"
+    "dev": "cross-env NODE_ENV=dev ts-node ./src/app.ts",
+    "prod": "cross-env NODE_ENV=prod ts-node ./src/app.ts"
   },
   "license": "ISC",
   "devDependencies": {
@@ -16,6 +17,8 @@
     "@typescript-eslint/parser": "^5.15.0",
     "binance": "^2.0.27",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
     "eslint": "^8.11.0",
     "express": "^4.17.3",
     "log4js": "^6.4.3",

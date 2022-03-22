@@ -1,6 +1,8 @@
 import express, { Application, json, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import fs from 'fs';
+import { typeorm } from './config';
+
 
 const app:Application = express();
 
@@ -11,11 +13,14 @@ app.use(express.urlencoded({ extended: false }));
 // 内置了 body 解析: https://expressjs.com/en/api.html#express.json
 app.use(json());
 
+console.log('typeorm:', typeorm);
+
 app.get('/', (req:Request, res:Response, next:NextFunction) => {
   console.log('req', req.baseUrl);
   const path = './public/index.html';
   const html = fs.readFileSync(path);
-  res.write(html);
+  // res.write(html);
+  res.status(200).write(html);
 });
 
 app.post('/api/update', (req:Request, res:Response) => {
