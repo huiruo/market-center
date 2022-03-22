@@ -1,0 +1,23 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "logs/*",
+    "docs/*",
+    ".md",
+    "/node_modules/*"
+  ],
+  "delay": "1000",
+  "exec": "ts-node ./src/app.ts",
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "./src/*"
+  ],
+  "env": {
+    "NODE_ENV": "dev"
+  },
+  "ext": "js ts json"
+}

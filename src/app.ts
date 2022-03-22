@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 // 内置了 body 解析: https://expressjs.com/en/api.html#express.json
 app.use(json());
 
-console.log('typeorm:', typeorm);
+console.log('typeorm test 5:', typeorm);
 
 app.get('/', (req:Request, res:Response, next:NextFunction) => {
   console.log('req', req.baseUrl);
