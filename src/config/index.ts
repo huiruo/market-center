@@ -11,11 +11,13 @@ export const typeormConfig:any = {
     password: envString('password_dev'),
     database: envString('database_dev'),
 
-    entities: ['dist/**/*.entity{.ts,.js}'],
+    entities: ['src/entity/*.ts'],
     connectionLimit: 1000,
     connectTimeout: 60 * 60 * 1000,
     acquireTimeout: 60 * 60 * 1000,
     timeout: 60 * 60 * 1000,
+    synchronize: true,
+    logging: false
   },
   prod: {
     type: 'mysql',
@@ -25,7 +27,8 @@ export const typeormConfig:any = {
     password: envString('password_prod'),
     database: envString('database_prod'),
 
-    entities: ['dist/**/*.entity{.ts,.js}'],
+    // entities: ['dist/**/*.entity{.ts,.js}'],
+    entities: ['src/entity/*.ts'],
     connectionLimit: 1000,
     connectTimeout: 60 * 60 * 1000,
     acquireTimeout: 60 * 60 * 1000,

@@ -2,7 +2,17 @@ import express, { Application, json, Request, Response, NextFunction } from 'exp
 import cors from 'cors';
 import fs from 'fs';
 import { typeorm } from './config';
+import { DataSource } from 'typeorm';
+import { User } from './entity/user.entity';
 
+// 创建 typeorm 连接
+const AppDataSource = new DataSource(typeorm);
+
+AppDataSource.initialize()
+  .then(() => {
+    console.log('数据库链接成功!');
+  })
+  .catch((error) => console.log('sql:'+error));
 
 const app:Application = express();
 
@@ -13,8 +23,6 @@ app.use(express.urlencoded({ extended: false }));
 // 内置了 body 解析: https://expressjs.com/en/api.html#express.json
 app.use(json());
 
-console.log('typeorm test 5:', typeorm);
-
 app.get('/', (req:Request, res:Response, next:NextFunction) => {
   console.log('req', req.baseUrl);
   const path = './public/index.html';
@@ -23,11 +31,16 @@ app.get('/', (req:Request, res:Response, next:NextFunction) => {
   res.status(200).write(html);
 });
 
-app.post('/api/update', (req:Request, res:Response) => {
+app.post('/api/update', async (req:Request, res:Response) => {
   console.log(req.url, 'req:', req.body);
+  const userRepository = AppDataSource.getRepository(User);
+  const allUsers = await userRepository.find();
+  console.log('allUsers', allUsers);
+
   res.status(200).send({
     code:200,
-    msg:'请求成功'
+    msg:'请求成功',
+    result:allUsers
   });
 });
 
