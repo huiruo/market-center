@@ -5,7 +5,7 @@ interface IOptions{
   secretKey:string
 }
 
-export class BalanceServer {
+export class BinanceServer {
   secretKey: string;
   apiKey: string;
 
