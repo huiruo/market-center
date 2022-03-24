@@ -1,9 +1,10 @@
 import express, { Application, json, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import fs from 'fs';
-import { typeorm } from './config';
+import { apiKey, secretKey, typeorm } from './config';
 import { DataSource } from 'typeorm';
 import { User } from './entity/user.entity';
+import { BinanceServer } from './utils/binanceServer';
 
 // 创建 typeorm 连接
 const AppDataSource = new DataSource(typeorm);
@@ -30,6 +31,9 @@ app.get('/', (req:Request, res:Response, next:NextFunction) => {
   // res.write(html);
   res.status(200).write(html);
 });
+
+const BinanceClient = new BinanceServer({apiKey, secretKey});
+console.log('BinanceClient:', BinanceClient);
 
 app.post('/api/update', async (req:Request, res:Response) => {
   console.log(req.url, 'req:', req.body);
