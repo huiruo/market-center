@@ -1,4 +1,4 @@
-import { MainClient } from 'binance';
+import { MainClient, SymbolPrice } from 'binance';
 
 interface IOptions{
   apiKey:string
@@ -24,9 +24,10 @@ export class BinanceServer {
     return binance;
   }
 
-  async getTickerPrice (apiId: number, symbol: string): Promise<number> {
-    const binance = await this.getBinanceClient(apiId);
-    const { price } = (await binance.getSymbolPriceTicker({ symbol })) as SymbolPrice;
+  public async getTickerPrice (symbol: string): Promise<number> {
+    const binance = await this.getBinanceClient();
+    const res = await binance.getSymbolPriceTicker({ symbol });
+    const { price } = res as SymbolPrice;
 
     return price as number;
   }

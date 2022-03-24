@@ -15,8 +15,13 @@ AppDataSource.initialize()
   })
   .catch((error) => console.log('sql:'+error));
 
+// inint Binance
+const BinanceClient = new BinanceServer({apiKey, secretKey});
+console.log('BinanceClient:', BinanceClient);
+
 const app:Application = express();
 
+// start express
 app.use(cors());
 
 app.use(express.urlencoded({ extended: false }));
@@ -32,18 +37,22 @@ app.get('/', (req:Request, res:Response, next:NextFunction) => {
   res.status(200).write(html);
 });
 
-const BinanceClient = new BinanceServer({apiKey, secretKey});
-console.log('BinanceClient:', BinanceClient);
-
 app.post('/api/update', async (req:Request, res:Response) => {
   console.log(req.url, 'req:', req.body);
+
+  // orm test
   const userRepository = AppDataSource.getRepository(User);
   const allUsers = await userRepository.find();
-  console.log('allUsers', allUsers);
+  // orm test
+
+  // binance test
+  const price = await BinanceClient.getTickerPrice('BTCUSDT');
+  // binance test
 
   res.status(200).send({
     code:200,
     msg:'请求成功',
+    price,
     result:allUsers
   });
 });
