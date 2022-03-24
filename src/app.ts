@@ -4,7 +4,8 @@ import fs from 'fs';
 import { apiKey, secretKey, typeorm } from './config';
 import { DataSource } from 'typeorm';
 import { User } from './entity/user.entity';
-import { BinanceServer } from './utils/binanceServer';
+import { BinanceServer } from './biance-server/binance-server';
+import { wsMarketPublic } from './biance-server/ws-public';
 
 // 创建 typeorm 连接
 const AppDataSource = new DataSource(typeorm);
@@ -18,6 +19,9 @@ AppDataSource.initialize()
 // inint Binance
 const BinanceClient = new BinanceServer({apiKey, secretKey});
 console.log('BinanceClient:', BinanceClient);
+
+// web sockect test
+wsMarketPublic(apiKey, secretKey, 'BTCUSDT');
 
 const app:Application = express();
 
