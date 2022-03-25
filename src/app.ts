@@ -5,7 +5,7 @@ import { apiKey, secretKey, typeorm } from './config';
 import { DataSource } from 'typeorm';
 import { User } from './entity/user.entity';
 import { BinanceServer } from './binance-server/binance-server';
-import { wsMarketPublic } from './binance-server/ws-public';
+import { wsMarketPublic } from './binance-server/ws-market-Public';
 
 // 创建 typeorm 连接
 const AppDataSource = new DataSource(typeorm);
