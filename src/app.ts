@@ -4,8 +4,8 @@ import fs from 'fs';
 import { apiKey, secretKey, typeorm } from './config';
 import { DataSource } from 'typeorm';
 import { User } from './entity/user.entity';
-import { BinanceServer } from './biance-server/binance-server';
-import { wsMarketPublic } from './biance-server/ws-public';
+import { BinanceServer } from './binance-server/binance-server';
+import { wsMarketPublic } from './binance-server/ws-public';
 
 // 创建 typeorm 连接
 const AppDataSource = new DataSource(typeorm);
