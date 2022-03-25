@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "行情中心",
   "scripts": {
-    "dev1": "cross-env NODE_ENV=dev && nodemon",
     "dev": "nodemon",
     "prod": "cross-env NODE_ENV=prod ts-node ./src/app.ts"
   },
