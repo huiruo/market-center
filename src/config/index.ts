@@ -39,4 +39,7 @@ export const typeormConfig:any = {
 export const typeorm = typeormConfig[env];
 
 export const apiKey=envString('api_key');
+
 export const secretKey=envString('secret_key');
+
+export const log_dir=envString('log_dir');

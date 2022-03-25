@@ -8,7 +8,7 @@
     "/node_modules/*"
   ],
   "delay": "1000",
-  "exec": "ts-node ./src/app.ts",
+  "exec": "ts-node ./src/index.ts",
   "verbose": true,
   "execMap": {
     "js": "node --harmony"
