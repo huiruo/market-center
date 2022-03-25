@@ -10,7 +10,6 @@ export class BinanceServer {
   apiKey: string;
 
   constructor (options:IOptions) {
-    console.log('config', options);
     this.apiKey=options.apiKey;
     this.secretKey=options.secretKey;
   }

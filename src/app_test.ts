@@ -5,10 +5,11 @@ import { apiKey, secretKey, typeorm } from './config';
 import { DataSource } from 'typeorm';
 import { User } from './entity/user.entity';
 import { BinanceServer } from './binance-server/binance-server';
-import { wsMarketPublic } from './binance-server/ws-market-Public';
+// import { wsMarketPublic } from './binance-server/ws-market-Public';
 
 // 创建 typeorm 连接
 const AppDataSource = new DataSource(typeorm);
+console.log('数据库:', typeorm);
 
 AppDataSource.initialize()
   .then(() => {
@@ -21,7 +22,7 @@ const BinanceClient = new BinanceServer({apiKey, secretKey});
 console.log('BinanceClient:', BinanceClient);
 
 // web sockect test
-wsMarketPublic(apiKey, secretKey, 'BTCUSDT');
+// wsMarketPublic(apiKey, secretKey, 'BTCUSDT');
 
 const app:Application = express();
 

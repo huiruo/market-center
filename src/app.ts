@@ -5,8 +5,8 @@ import { DataSource } from 'typeorm';
 import { apiKey, secretKey, typeorm } from './config';
 import { BinanceServer } from './binance-server/binance-server';
 import { wsMarketPublic } from './binance-server/ws-market-Public';
-import { User } from './entity/user.entity';
 import { logger } from './utils/logger';
+import { User } from './entity/user.entity';
 
 export default class App {
   public app: Application;
@@ -18,15 +18,15 @@ export default class App {
 
     this.initializeMiddlewares();
     this.connectToDatabase();
+    this.initBinance();
   }
 
   private connectToDatabase () {
-    console.log('typeorm:', typeorm);
     this.AppDataSource = new DataSource(typeorm);
 
     this.AppDataSource.initialize()
       .then(() => {
-        console.log('数据库链接成功!');
+        logger.info('数据库链接成功!');
       })
       .catch((error) => console.log('sql:'+error));
   }
@@ -34,7 +34,6 @@ export default class App {
   // inint Binance
   private initBinance () {
     this.BinanceClient = new BinanceServer({apiKey, secretKey});
-    console.log('BinanceClient:', this.BinanceClient);
   }
 
   // web sockect test
@@ -91,11 +90,8 @@ export default class App {
   }
 
   public start () {
-    // app.listen(8888, function () {
-    //   console.log('app is runing at port 8888');
-    // });
     this.app.listen(8888, function () {
-      logger.info('app is runing at port 8888');
+      logger.info('Server is runing at port 8888');
     });
   }
 }
