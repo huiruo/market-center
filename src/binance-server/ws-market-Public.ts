@@ -1,74 +1,96 @@
 import {
   WebsocketClient,
-  DefaultLogger,
+  // DefaultLogger,
   isWsFormatted24hrTicker,
   isWsFormattedKline,
+  DefaultLogger,
 } from 'binance';
+import { logger } from '../utils/logger';
 
 export const wsMarketPublic = async (apiKey:string, secretKey:string, market:string) => {
   const key = apiKey;
   const secret = secretKey;
-  console.log('init：', key, 'secret:', secret);
+  logger.info('init：', key, 'secret:', secret);
 
   // const market = market;
   // const coinMSymbol = 'AVAXUSD_PERP';
 
-  const logger = {
+  // /*
+  const log = {
     ...DefaultLogger,
     // silly: () => {},
   };
+  // */
 
   const wsClient = new WebsocketClient({
     api_key: key,
     api_secret: secret,
     beautify: true,
-  }, logger);
+  }, log);
 
   wsClient.on('message', (data) => {
-    // console.log('raw message received ', JSON.stringify(data, null, 2));
+    // logger.info('raw message received ', JSON.stringify(data, null, 2));
   });
 
   wsClient.on('formattedMessage', (data) => {
     // manually handle events and narrow down to desired types
     if (!Array.isArray(data) && data.eventType === 'kline') {
-      console.log('kline received ', data.kline);
+      // logger.info('kline received test:', data.kline);
+      // logger.info('===kline received AAA=====');
+      // logger.info('===kline received AAA=====', data.kline.open);
     }
 
     // or use a supplied type guard (if available - not all type guards have been written yet)
     if (isWsFormattedKline(data)) {
-      console.log('kline received ', data.kline);
+      logger.info(JSON.stringify(data.kline));
+      logger.info('这是分割线=====================BBB');
+      logger.info('end');
+      logger.info('end');
+      logger.info('end');
+      logger.info('end');
 
       return;
     }
 
     if (isWsFormatted24hrTicker(data)) {
-      console.log('24hrTicker received ', data);
+      logger.info('24hrTicker received ', data);
+      logger.info('这是分割线=====================end');
+      logger.info('==============================');
 
       return;
     }
 
-    console.log('log formattedMessage: ', data);
+    logger.info('log formattedMessage: '+JSON.stringify(data));
   });
 
   wsClient.on('open', (data) => {
-    console.log('connection opened open:', data.wsKey, data.ws.target.url);
+    logger.info('connection opened open:', data.wsKey, data.ws.target.url);
   });
 
   // response to command sent via WS stream (e.g LIST_SUBSCRIPTIONS)
   wsClient.on('reply', (data) => {
-    console.log('log reply: ', JSON.stringify(data, null, 2));
+    logger.info('log reply: ', JSON.stringify(data, null, 2));
   });
   wsClient.on('reconnecting', (data) => {
-    console.log('ws automatically reconnecting.... ', data?.wsKey );
+    logger.info('ws automatically reconnecting.... ', data?.wsKey );
   });
   wsClient.on('reconnected', (data) => {
-    console.log('ws has reconnected ', data?.wsKey );
+    logger.info('ws has reconnected ', data?.wsKey );
   });
+
+  // test start
+  // wsClient.subscribeKlines(market, '1m', 'usdm');
+  // wsClient.subscribeKlines(market, '15m', 'usdm');
+
+  // wsClient.subscribeSymbolMini24hrTicker(market,'spot');
+  wsClient.subscribeSymbolMini24hrTicker(market, 'usdm');
+  // test end
+
 
   // wsClient.subscribeCoinIndexPrice(coinMSymbol);
 
   // wsClient.subscribeSpotKline(market, '1m');
-  wsClient.subscribeKlines(market, '1m', 'usdm');
+  // wsClient.subscribeKlines(market, '1m', 'usdm');
   // wsClient.subscribeMarkPrice(market, 'usdm');
   // wsClient.subscribeMarkPrice(coinMSymbol, 'coinm');
   // wsClient.subscribeAllMarketMarkPrice('usdm');

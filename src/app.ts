@@ -26,7 +26,8 @@ export default class App {
 
     this.AppDataSource.initialize()
       .then(() => {
-        logger.info('数据库链接成功!');
+        logger.info('数据库链接成功!初始化ws');
+        this.initWsMarketPublic();
       })
       .catch((error) => console.log('sql:'+error));
   }
