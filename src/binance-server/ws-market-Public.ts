@@ -1,26 +1,27 @@
 import {
   WebsocketClient,
-  // DefaultLogger,
   isWsFormatted24hrTicker,
   isWsFormattedKline,
   DefaultLogger,
 } from 'binance';
 import { logger } from '../utils/logger';
 
+
+const marketType = 'spot';
+// const marketType = 'usdm';
+// const marketType = 'coinm';
+
 export const wsMarketPublic = async (apiKey:string, secretKey:string, market:string) => {
   const key = apiKey;
   const secret = secretKey;
-  logger.info('init：', key, 'secret:', secret);
 
   // const market = market;
   // const coinMSymbol = 'AVAXUSD_PERP';
 
-  // /*
   const log = {
     ...DefaultLogger,
     // silly: () => {},
   };
-  // */
 
   const wsClient = new WebsocketClient({
     api_key: key,
@@ -29,7 +30,7 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
   }, log);
 
   wsClient.on('message', (data) => {
-    // logger.info('raw message received ', JSON.stringify(data, null, 2));
+    logger.info('raw message received ', JSON.stringify(data, null, 2));
   });
 
   wsClient.on('formattedMessage', (data) => {
@@ -81,9 +82,11 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
   // test start
   // wsClient.subscribeKlines(market, '1m', 'usdm');
   // wsClient.subscribeKlines(market, '15m', 'usdm');
+  wsClient.subscribeKlines(market, '1d', marketType);
+  // wsClient.subscribeKlines(market, '1w', marketType);
 
   // wsClient.subscribeSymbolMini24hrTicker(market,'spot');
-  wsClient.subscribeSymbolMini24hrTicker(market, 'usdm');
+  // wsClient.subscribeSymbolMini24hrTicker(market, 'usdm');
   // test end
 
 
