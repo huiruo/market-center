@@ -1,14 +1,13 @@
 import express, { Application, json, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import fs from 'fs';
-// import { DataSource } from 'typeorm';
 import { apiKey, secretKey } from './config';
 import { BinanceServer } from './binance-server/binance-server';
-import { wsMarketPublic } from './binance-server/ws-market-Public';
 import { logger } from './utils/logger';
 import { User } from './entity/user.entity';
 import DataBase from './config/database';
 import { Kline1d } from './entity/kline.1d.entity';
+// import { wsMarketPublic } from './binance-server/ws-market-Public';
 
 export default class App {
   public app: Application;
@@ -41,13 +40,7 @@ export default class App {
     this.BinanceClient = new BinanceServer({apiKey, secretKey});
   }
 
-  // web sockect test
-  private initWsMarketPublic () {
-    wsMarketPublic(apiKey, secretKey, 'BTCUSDT');
-  }
-
   private initializeMiddlewares () {
-    // start express
     this.app.use(cors());
 
     this.app.use(express.urlencoded({ extended: false }));

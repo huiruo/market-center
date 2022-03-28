@@ -1,6 +1,7 @@
 import { DataSource } from 'typeorm';
+import { wsMarketPublic } from '../binance-server/ws-market-Public';
 import { logger } from '../utils/logger';
-import { typeorm } from './index';
+import { apiKey, secretKey, typeorm } from './index';
 
 export default class DataBase {
   public AppDataSource:DataSource;
@@ -15,7 +16,7 @@ export default class DataBase {
     this.AppDataSource.initialize()
       .then(() => {
         logger.info('数据库链接成功!初始化ws');
-        // this.initWsMarketPublic();
+        wsMarketPublic(apiKey, secretKey, 'BTCUSDT', this.AppDataSource);
       })
       .catch((error) => console.log('sql:'+error));
   }
