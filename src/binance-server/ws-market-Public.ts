@@ -30,7 +30,7 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
   }, log);
 
   wsClient.on('message', (data) => {
-    logger.info('raw message received ', JSON.stringify(data, null, 2));
+    logger.info('raw message received:'+JSON.stringify(data, null, 2));
   });
 
   wsClient.on('formattedMessage', (data) => {
@@ -38,45 +38,40 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
     if (!Array.isArray(data) && data.eventType === 'kline') {
       // logger.info('kline received test:', data.kline);
       // logger.info('===kline received AAA=====');
-      // logger.info('===kline received AAA=====', data.kline.open);
+      logger.info('这是分割线=====================kline received formattedMessage: '+JSON.stringify(data.kline));
     }
 
     // or use a supplied type guard (if available - not all type guards have been written yet)
     if (isWsFormattedKline(data)) {
-      logger.info(JSON.stringify(data.kline));
-      logger.info('这是分割线=====================BBB');
-      logger.info('end');
-      logger.info('end');
-      logger.info('end');
-      logger.info('end');
+      logger.info('这是分割线=====================isWsFormattedKline: ' + JSON.stringify(data.kline));
 
       return;
     }
 
     if (isWsFormatted24hrTicker(data)) {
-      logger.info('24hrTicker received ', data);
-      logger.info('这是分割线=====================end');
-      logger.info('==============================');
+      logger.info('这是分割线=================isWsFormatted24hrTicker: ' + JSON.stringify(data));
 
       return;
     }
 
-    logger.info('log formattedMessage: '+JSON.stringify(data));
+    logger.info('log formattedMessage: ' + JSON.stringify(data));
   });
 
   wsClient.on('open', (data) => {
-    logger.info('connection opened open:', data.wsKey, data.ws.target.url);
+    logger.info('connection opened open: '+ JSON.stringify(data.wsKey)+'==='+JSON.stringify(data.ws.target.url));
   });
 
   // response to command sent via WS stream (e.g LIST_SUBSCRIPTIONS)
   wsClient.on('reply', (data) => {
     logger.info('log reply: ', JSON.stringify(data, null, 2));
   });
+
   wsClient.on('reconnecting', (data) => {
-    logger.info('ws automatically reconnecting.... ', data?.wsKey );
+    logger.info('ws automatically reconnecting.... : ' + data?.wsKey );
   });
+
   wsClient.on('reconnected', (data) => {
-    logger.info('ws has reconnected ', data?.wsKey );
+    logger.info('ws has reconnected: '+ data?.wsKey );
   });
 
   // test start
