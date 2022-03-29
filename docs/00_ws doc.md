@@ -104,3 +104,40 @@ wsClient.subscribeKlines(market, '1m', 'usdm');
   "q": "18"               // 成交额
 }
 ```
+
+#### 实例
+```javaScript
+wsClient.on('message', (data) => {
+  logger.info('raw message received');
+  logger.info('raw message received:'+JSON.stringify(data, null, 2));
+});
+```
+
+```json
+  raw message received:{
+    "e": "kline",
+    "E": 1648443231648,
+    "s": "BTCUSDT",
+    "k": {
+      "t": 1648425600000,
+      "T": 1648511999999,
+      "s": "BTCUSDT",
+      "i": "1d",
+      "f": 1306507287,
+      "L": 1306805923,
+      "o": "46827.76000000",
+      "c": "46984.00000000",
+      "h": "47650.00000000",
+      "l": "46663.56000000",
+      "v": "11616.94079000",
+      "n": 298637,
+      "x": false,
+      "q": "545899704.68287810",
+      "V": "6102.74936000",
+      "Q": "286821335.70727380",
+      "B": "0"
+    },
+    "wsMarket": "spot",
+    "wsKey": "spot_kline_btcusdt_1d"
+  }
+```
