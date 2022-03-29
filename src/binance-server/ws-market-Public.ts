@@ -6,9 +6,7 @@ import {
   DefaultLogger,
 } from 'binance';
 import { logger } from '../utils/logger';
-import { Kline15m } from '../entity/kline.15m.entity';
-// import { Kline1d } from '../entity/kline.1d.entity';
-
+import { KlineAll } from '../entity/kline.all.entity';
 
 const wsMarket = 'spot';
 // const wsMarket = 'usdm';
@@ -65,23 +63,24 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
   wsClient.on('formattedMessage', async (data) => {
     // manually handle events and narrow down to desired types
     if (!Array.isArray(data) && data.eventType === 'kline') {
-      // logger.info('kline received test:', data.kline);
-      // logger.info('===kline received AAA=====');
-      logger.info('这是分割线:kline received formattedMessage: '+JSON.stringify(data.kline));
+      // logger.info('这是分割线:kline received formattedMessage: '+JSON.stringify(data.kline));
     }
 
     // or use a supplied type guard (if available - not all type guards have been written yet)
     if (isWsFormattedKline(data)) {
-      logger.info('这是分割线:isWsFormattedKline: ' + JSON.stringify(data.kline));
+      logger.info(`这是分割线:isWsFormattedKline: now date: ${Date.now()}===${JSON.stringify(data.kline)}`);
 
       // 1 day
       // const kline1dRepository = appDataSource.getRepository(Kline1d);
       // await kline1dRepository.save(data?.kline as unknown as Kline1d);
 
       // 15m
-      const kline15mRepository = appDataSource.getRepository(Kline15m);
-      await kline15mRepository.save(data?.kline as unknown as Kline15m);
-      console.log('插入成功!');
+      // const kline15mRepository = appDataSource.getRepository(Kline15m);
+      // await kline15mRepository.save(data?.kline as unknown as Kline15m);
+
+      //  all
+      const klineAllRepository = appDataSource.getRepository(KlineAll);
+      await klineAllRepository.save(data?.kline as unknown as KlineAll);
 
       return;
     }

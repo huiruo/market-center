@@ -4,25 +4,25 @@ import { logger } from '../utils/logger';
 import { apiKey, secretKey, typeorm } from './index';
 
 export default class DataBase {
-  public AppDataSource:DataSource;
+  public appDataSource:DataSource;
 
   constructor () {
     this.connectToDatabase();
   }
 
   private connectToDatabase () {
-    this.AppDataSource = new DataSource(typeorm);
+    this.appDataSource = new DataSource(typeorm);
 
-    this.AppDataSource.initialize()
+    this.appDataSource.initialize()
       .then(() => {
-        logger.info('数据库链接成功!初始化ws');
-        wsMarketPublic(apiKey, secretKey, 'BTCUSDT', this.AppDataSource);
+        logger.info('数据库链接成功!开始初始化ws');
+        wsMarketPublic(apiKey, secretKey, 'BTCUSDT', this.appDataSource);
       })
       .catch((error) => console.log('sql:'+error));
   }
 
   public getRepository (entity:any):any {
 
-    return this.AppDataSource.getRepository(entity);
+    return this.appDataSource.getRepository(entity);
   }
 }

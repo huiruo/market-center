@@ -6,8 +6,6 @@ import { BinanceServer } from './binance-server/binance-server';
 import { logger } from './utils/logger';
 import { User } from './entity/user.entity';
 import DataBase from './config/database';
-import { Kline1d } from './entity/kline.1d.entity';
-// import { wsMarketPublic } from './binance-server/ws-market-Public';
 
 export default class App {
   public app: Application;
@@ -19,20 +17,11 @@ export default class App {
 
     this.initializeMiddlewares();
     this.connectToDatabase();
-    this.initBinance();
+    // this.initBinance();
   }
 
   private connectToDatabase () {
-
     this.AppDataSource = new DataBase();
-    /*
-    this.AppDataSource.initialize()
-      .then(() => {
-        logger.info('数据库链接成功!初始化ws');
-        this.initWsMarketPublic();
-      })
-      .catch((error) => console.log('sql:'+error));
-    */
   }
 
   // inint Binance
@@ -63,36 +52,6 @@ export default class App {
       const userRepository = this.AppDataSource.getRepository(User);
       const allUsers = await userRepository.find();
       // orm test
-
-      // orm inset
-      const obj:any = {
-        'startTime': 1647820800000,
-        'endTime': 1648425599999,
-        'symbol': 'BTCUSDT',
-        'interval': '1w',
-        'firstTradeId': 2059310046,
-        'lastTradeId': 2076475256,
-        'open': 41261,
-        'close': 44659.8,
-        'high': 45142,
-        'low': 40430,
-        'volume': 1860465.398,
-        'trades': 17162195,
-        'final': false,
-        'quoteVolume': 79876526343.53127,
-        'volumeActive': 940530.835,
-        'quoteVolumeActive': 40397215107.25651,
-        'ignored': 0
-      };
-
-      try {
-        const kline1dRepository = this.AppDataSource.getRepository(Kline1d);
-        const save = await kline1dRepository.save(obj);
-        console.log('save', save);
-      } catch (error) {
-
-        console.log('save', error);
-      }
 
       // binance test
       const price = await this.BinanceClient.getTickerPrice('BTCUSDT');
