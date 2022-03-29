@@ -7,10 +7,38 @@ import {
 } from 'binance';
 import { logger } from '../utils/logger';
 import { KlineAll } from '../entity/kline.all.entity';
+import { Kline15m } from '../entity/kline.15m.entity';
 
+// usdm | coinm | spot
 const wsMarket = 'spot';
-// const wsMarket = 'usdm';
-// const wsMarket = 'coinm';
+
+
+async function isSameKlineAtCertainInterval (appDataSource:DataSource, startTime:number, endTime:number, interval:string):Promise<boolean> {
+  logger.info(`${startTime}===${endTime}`);
+
+  // SELECT * FROM kline_15m WHERE startTime = 1648549800000 AND endTime = 1648550699999 LIMIT 1;
+  const sql = `SELECT * FROM kline_${interval} WHERE startTime = ${startTime} AND endTime = ${endTime} LIMIT 1;`;
+  const result = await appDataSource.query(sql);
+  logger.info('result:'+JSON.stringify(result));
+  if(result&&result.length >0) {
+
+    return true;
+  }else{
+
+    const numbs = `SELECT COUNT(*) as totalCount FROM kline_${interval};`;
+    const result2 = await appDataSource.query(numbs);
+    const totalCount = parseInt(result2[0].totalCount);
+    logger.info('totalCount'+JSON.stringify(result2[0]));
+    logger.info('totalCount'+totalCount);
+    logger.info(typeof totalCount);
+    if(totalCount ===0) {
+
+      return true;
+    }
+  }
+
+  return false;
+}
 
 export const wsMarketPublic = async (apiKey:string, secretKey:string, market:string, appDataSource:DataSource) => {
   const key = apiKey;
@@ -74,15 +102,43 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
       // const kline1dRepository = appDataSource.getRepository(Kline1d);
       // await kline1dRepository.save(data?.kline as unknown as Kline1d);
 
+      const {startTime, endTime, interval} =data.kline as unknown as KlineAll;
+
+      const isSameKline = await isSameKlineAtCertainInterval(appDataSource, startTime, endTime, interval);
+
       // 15m
-      // const kline15mRepository = appDataSource.getRepository(Kline15m);
-      // await kline15mRepository.save(data?.kline as unknown as Kline15m);
+      if(interval==='15m') {
+        if(isSameKline) {
+          try {
+            const klineAllRepository = appDataSource.getRepository(Kline15m);
+            await klineAllRepository.save(data?.kline as unknown as Kline15m);
+            logger.info('15m k线插入成功,结束');
+
+            return;
+          } catch (error) {
+
+            logger.info(`15m k线插入失败:${error}`);
+
+            return;
+          }
+        }else{
+          logger.info('ws 返回 15m 相同的k线,不需要插入数据库');
+
+          return;
+        }
+      }
 
       //  all
-      const klineAllRepository = appDataSource.getRepository(KlineAll);
-      await klineAllRepository.save(data?.kline as unknown as KlineAll);
+      /*
+      try {
+        const klineAllRepository = appDataSource.getRepository(KlineAll);
+        await klineAllRepository.save(data?.kline as unknown as KlineAll);
+        logger.info('插入成功-这条数据处理,end');
+      } catch (error) {
 
-      return;
+        logger.info(`插入失败,end:${error}`);
+      }
+      */
     }
 
     if (isWsFormatted24hrTicker(data)) {

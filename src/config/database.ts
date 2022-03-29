@@ -15,7 +15,7 @@ export default class DataBase {
 
     this.appDataSource.initialize()
       .then(() => {
-        logger.info('数据库链接成功!开始初始化ws');
+        logger.info('数据库链接成功!开始初始化wsMarket...');
         wsMarketPublic(apiKey, secretKey, 'BTCUSDT', this.appDataSource);
       })
       .catch((error) => console.log('sql:'+error));
