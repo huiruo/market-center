@@ -12,28 +12,44 @@ import { Kline15m } from '../entity/kline.15m.entity';
 // usdm | coinm | spot
 const wsMarket = 'spot';
 
-async function isSameKlineAtCertainInterval (appDataSource:DataSource, startTime:number, endTime:number, interval:string):Promise<boolean> {
+/*
+* 1.先做到每次更新数据库的k数据
+* 2.优化 用 定时器优化n 秒后更新数据
+*/
+async function isSameKlineAtCertainInterval (appDataSource:DataSource, klineAll:KlineAll ):Promise<boolean> {
 
-  // SELECT * FROM kline_15m WHERE startTime = 1648549800000 AND endTime = 1648550699999 LIMIT 1;
-  const sql = `SELECT * FROM kline_${interval} WHERE startTime = ${startTime} AND endTime = ${endTime} LIMIT 1;`;
-  logger.info(`${sql}`);
-  const result = await appDataSource.query(sql);
+  const {
+    startTime,
+    endTime,
+    interval,
+    firstTradeId,
+    lastTradeId,
+    open,
+    close,
+    high,
+    low,
+    volume,
+    trades,
+    final,
+    quoteVolume,
+    volumeActive,
+    quoteVolumeActive
+  } = klineAll;
 
-  if(result&&result.length >0) {
-    logger.info('result.length:'+result.length);
+  const selectSql = `SELECT startTime,endTime FROM kline_${interval} WHERE startTime = ${startTime} AND endTime = ${endTime} LIMIT 1;`;
+  const result = await appDataSource.query(selectSql);
+  logger.info(`${JSON.stringify(klineAll)}`);
+
+  if(result && result.length > 0) {
+    // Update the K-line data of the database start
+    const updateSql = `UPDATE kline_${interval} SET firstTradeId = ${firstTradeId},lastTradeId = ${lastTradeId},open = ${open},close = ${close},high = ${high},low = ${low},volume = ${volume},trades = ${trades},final = ${final},quoteVolume = ${quoteVolume},volumeActive = ${volumeActive},quoteVolumeActive = ${quoteVolumeActive} WHERE startTime = ${startTime} AND endTime = ${endTime};`;
+    await appDataSource.query(updateSql);
+    // logger.info(`update:${JSON.stringify(updateRes)}`);
+    logger.info(`update:${updateSql}`);
+    // Update the K-line data of the database end
 
     return true;
   }else{
-    const numbs = `SELECT COUNT(*) as totalCount FROM kline_${interval};`;
-    const result2 = await appDataSource.query(numbs);
-    const totalCount = parseInt(result2[0].totalCount);
-    logger.info(`totalCount:${JSON.stringify(result2[0])}`);
-
-    if(totalCount ===0) {
-      logger.info('totalCount 为 0');
-
-      return false;
-    }
 
     return false;
   }
@@ -66,27 +82,27 @@ export const wsMarketPublic = async (apiKey:string, secretKey:string, market:str
 
     // or use a supplied type guard (if available - not all type guards have been written yet)
     if (isWsFormattedKline(data)) {
-      logger.info(`这是分割线:isWsFormattedKline: now date: ${Date.now()}===${JSON.stringify(data.kline)}`);
+      // logger.info(`这是分割线:isWsFormattedKline: now date: ${Date.now()}===${JSON.stringify(data.kline)}`);
 
-      const {startTime, endTime, interval} =data.kline as unknown as KlineAll;
-      const isSameKline = await isSameKlineAtCertainInterval(appDataSource, startTime, endTime, interval);
+      const {interval} =data.kline as unknown as KlineAll;
+      const isSameKline = await isSameKlineAtCertainInterval(appDataSource, data.kline as unknown as KlineAll);
 
       // 15m
       if(interval==='15m') {
         if(isSameKline) {
-          logger.info('ws 返回 15m 相同的k线,不需要插入数据库');
+          logger.info('A1-ws 返回 15m 相同的k线,不需要插入数据库');
 
           return;
         }else{
           try {
             const klineAllRepository = appDataSource.getRepository(Kline15m);
             await klineAllRepository.save(data?.kline as unknown as Kline15m);
-            logger.info('15m k线插入成功');
+            logger.info('A2-15m k线插入成功');
 
             return;
           } catch (error) {
 
-            logger.info(`15m k线插入失败:${error}`);
+            logger.info(`A3-15m k线插入失败:${error}`);
 
             return;
           }

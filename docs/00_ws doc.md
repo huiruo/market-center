@@ -1,4 +1,5 @@
-#### K线图间隔参数:
+#### K 线图间隔参数:
+
 ```
 m -> 分钟; h -> 小时; d -> 天; w -> 周; M -> 月
 ```
@@ -21,60 +22,64 @@ m -> 分钟; h -> 小时; d -> 天; w -> 周; M -> 月
 1M
 ```
 
-#### 1.例子：K线 Streams
-K线stream逐秒推送所请求的K线种类(最新一根K线)的更新。
+#### 1.例子：K 线 Streams
+
+K 线 stream 逐秒推送所请求的 K 线种类(最新一根 K 线)的更新。
 Payload:
+
 ```json
 {
-  "e": "kline",     // 事件类型
-  "E": 123456789,   // 事件时间
-  "s": "BNBBTC",    // 交易对
+  "e": "kline", // 事件类型
+  "E": 123456789, // 事件时间
+  "s": "BNBBTC", // 交易对
   "k": {
     "t": 123400000, // 这根K线的起始时间
     "T": 123460000, // 这根K线的结束时间
-    "s": "BNBBTC",  // 交易对
-    "i": "1m",      // K线间隔
-    "f": 100,       // 这根K线期间第一笔成交ID
-    "L": 200,       // 这根K线期间末一笔成交ID
-    "o": "0.0010",  // 这根K线期间第一笔成交价
-    "c": "0.0020",  // 这根K线期间末一笔成交价
-    "h": "0.0025",  // 这根K线期间最高成交价
-    "l": "0.0015",  // 这根K线期间最低成交价
-    "v": "1000",    // 这根K线期间成交量
-    "n": 100,       // 这根K线期间成交笔数
-    "x": false,     // 这根K线是否完结(是否已经开始下一根K线)
-    "q": "1.0000",  // 这根K线期间成交额
-    "V": "500",     // 主动买入的成交量
-    "Q": "0.500",   // 主动买入的成交额
-    "B": "123456"   // 忽略此参数
+    "s": "BNBBTC", // 交易对
+    "i": "1m", // K线间隔
+    "f": 100, // 这根K线期间第一笔成交ID
+    "L": 200, // 这根K线期间末一笔成交ID
+    "o": "0.0010", // 这根K线期间第一笔成交价
+    "c": "0.0020", // 这根K线期间末一笔成交价
+    "h": "0.0025", // 这根K线期间最高成交价
+    "l": "0.0015", // 这根K线期间最低成交价
+    "v": "1000", // 这根K线期间成交量
+    "n": 100, // 这根K线期间成交笔数
+    "x": false, // 这根K线是否完结(是否已经开始下一根K线)
+    "q": "1.0000", // 这根K线期间成交额
+    "V": "500", // 主动买入的成交量
+    "Q": "0.500", // 主动买入的成交额
+    "B": "123456" // 忽略此参数
   }
 }
 ```
 
 wsClient.subscribeKlines(market, '1m', 'usdm');
+
 ```json
 {
-  startTime: 1648171800000,
-  endTime: 1648171859999,
-  symbol: 'BTCUSDT',
-  interval: '1m',
-  firstTradeId: 2071186454,
-  lastTradeId: 2071194288,
-  open: 44071.9,
-  close: 44196.3,
-  high: 44196.3,
-  low: 44069.9,
-  volume: 915.057,
-  trades: 7835,
-  final: false,
-  quoteVolume: 40390720.50228,
-  volumeActive: 781.096,
-  quoteVolumeActive: 34478359.93928,
-  ignored: 0
+  "startTime": 1648171800000,
+  "endTime": 1648171859999,
+  "symbol": "BTCUSDT",
+  "interval": "1m",
+  "firstTradeId": 2071186454,
+  "lastTradeId": 2071194288,
+  "open": 44071.9,
+  "close": 44196.3,
+  "high": 44196.3,
+  "low": 44069.9,
+  "volume": 915.057,
+  "trades": 7835,
+  "final": false,
+  "quoteVolume": 40390720.50228,
+  "volumeActive": 781.096,
+  "quoteVolumeActive": 34478359.93928,
+  "ignored": 0
 }
 ```
 
-#### 2.按Symbol刷新的最近24小时精简ticker信息
+#### 2.按 Symbol 刷新的最近 24 小时精简 ticker 信息
+
 ```json
 {
   eventType: '24hrMiniTicker', // 事件类型
@@ -91,21 +96,23 @@ wsClient.subscribeKlines(market, '1m', 'usdm');
 }
 202
 ```
+
 ```json
 {
-  "e": "24hrMiniTicker",  // 事件类型
-  "E": 123456789,         // 事件时间
-  "s": "BNBBTC",          // 交易对
-  "c": "0.0025",          // 最新成交价格
-  "o": "0.0010",          // 24小时前开始第一笔成交价格
-  "h": "0.0025",          // 24小时内最高成交价
-  "l": "0.0010",          // 24小时内最低成交价
-  "v": "10000",           // 成交量
-  "q": "18"               // 成交额
+  "e": "24hrMiniTicker", // 事件类型
+  "E": 123456789, // 事件时间
+  "s": "BNBBTC", // 交易对
+  "c": "0.0025", // 最新成交价格
+  "o": "0.0010", // 24小时前开始第一笔成交价格
+  "h": "0.0025", // 24小时内最高成交价
+  "l": "0.0010", // 24小时内最低成交价
+  "v": "10000", // 成交量
+  "q": "18" // 成交额
 }
 ```
 
 #### 实例
+
 ```javaScript
 wsClient.on('message', (data) => {
   logger.info('raw message received');
@@ -140,4 +147,35 @@ wsClient.on('message', (data) => {
     "wsMarket": "spot",
     "wsKey": "spot_kline_btcusdt_1d"
   }
+```
+
+#### 插入实例：
+
+```javaScript
+async function isSameKlineAtCertainInterval (appDataSource:DataSource, startTime:number, endTime:number, interval:string):Promise<boolean> {
+
+  // SELECT * FROM kline_15m WHERE startTime = 1648549800000 AND endTime = 1648550699999 LIMIT 1;
+  const sql = `SELECT * FROM kline_${interval} WHERE startTime = ${startTime} AND endTime = ${endTime} LIMIT 1;`;
+  logger.info(`${sql}`);
+  const result = await appDataSource.query(sql);
+
+  if(result&&result.length >0) {
+    logger.info('result.length:'+result.length);
+
+    return true;
+  }else{
+    /*
+    const numbs = `SELECT COUNT(*) as totalCount FROM kline_${interval};`;
+    const result2 = await appDataSource.query(numbs);
+    const totalCount = parseInt(result2[0].totalCount);
+    logger.info(`totalCount:${JSON.stringify(result2[0])}`);
+    if(totalCount ===0) {
+      logger.info('totalCount 为 0');
+      return false;
+    }
+    */
+
+    return false;
+  }
+}
 ```
