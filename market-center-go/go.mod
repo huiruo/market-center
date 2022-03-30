@@ -1,4 +1,4 @@
-module trade-data-analyse
+module market-center-go
 
 go 1.18
 

@@ -1,4 +1,4 @@
-package main
+package binanceServer
 
 import (
 	"context"
@@ -11,6 +11,12 @@ var (
 	secretKey = ""
 	symbol    = "BTCUSDT"
 )
+
+func BinanceServer() {
+	fmt.Println("BinanceServer init")
+	//restClient()
+	wsServer()
+}
 
 func restClient() {
 	client := binance.NewClient(apiKey, secretKey)
@@ -50,10 +56,4 @@ func wsServer() {
 	fmt.Println("donec")
 
 	fmt.Println(doneC)
-}
-
-func BinanceServer() {
-	fmt.Println("BinanceServer init")
-	//restClient()
-	wsServer()
 }

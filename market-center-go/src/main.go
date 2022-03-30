@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"market-center-go/src/binanceServer"
 	"net/http"
 )
 
@@ -26,7 +27,7 @@ func say(s string) {
 
 func main() {
 	fmt.Println("hello world")
-	BinanceServer()
+	binanceServer.BinanceServer()
 	router := gin.Default()
 	router.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "hello world")
