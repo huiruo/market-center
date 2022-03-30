@@ -38,14 +38,14 @@ async function isSameKlineAtCertainInterval (appDataSource:DataSource, klineAll:
 
   const selectSql = `SELECT startTime,endTime FROM kline_${interval} WHERE startTime = ${startTime} AND endTime = ${endTime} LIMIT 1;`;
   const result = await appDataSource.query(selectSql);
-  logger.info(`${JSON.stringify(klineAll)}`);
+  // logger.info(`${JSON.stringify(klineAll)}`);
 
   if(result && result.length > 0) {
     // Update the K-line data of the database start
     const updateSql = `UPDATE kline_${interval} SET firstTradeId = ${firstTradeId},lastTradeId = ${lastTradeId},open = ${open},close = ${close},high = ${high},low = ${low},volume = ${volume},trades = ${trades},final = ${final},quoteVolume = ${quoteVolume},volumeActive = ${volumeActive},quoteVolumeActive = ${quoteVolumeActive} WHERE startTime = ${startTime} AND endTime = ${endTime};`;
     await appDataSource.query(updateSql);
     // logger.info(`update:${JSON.stringify(updateRes)}`);
-    logger.info(`update:${updateSql}`);
+    // logger.info(`update:${updateSql}`);
     // Update the K-line data of the database end
 
     return true;

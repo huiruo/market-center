@@ -1,0 +1,60 @@
+2022-03-25 10:11:30 error: uncaughtException: No metadata for "User" was found.
+EntityMetadataNotFoundError: No metadata for "User" was found.
+    at DataSource.getMetadata (D:\user_ws\market-center\src\data-source\DataSource.ts:404:30)
+    at Repository.get metadata [as metadata] (D:\user_ws\market-center\src\repository\Repository.ts:52:40)
+    at Repository.find (D:\user_ws\market-center\src\repository\Repository.ts:476:39)
+    at App.<anonymous> (D:\user_ws\market-center\src\app.ts:67:45)
+    at step (D:\user_ws\market-center\src\app.ts:56:23)
+    at Object.next (D:\user_ws\market-center\src\app.ts:37:53)
+    at D:\user_ws\market-center\src\app.ts:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\user_ws\market-center\src\app.ts:27:12)
+    at D:\user_ws\market-center\src\app.ts:62:66
+2022-03-25 12:44:38 error: uncaughtException: No metadata for "User" was found.
+EntityMetadataNotFoundError: No metadata for "User" was found.
+    at DataSource.getMetadata (D:\user_ws\market-center\src\data-source\DataSource.ts:404:30)
+    at Repository.get metadata [as metadata] (D:\user_ws\market-center\src\repository\Repository.ts:52:40)
+    at Repository.find (D:\user_ws\market-center\src\repository\Repository.ts:476:39)
+    at App.<anonymous> (D:\user_ws\market-center\src\app.ts:67:45)
+    at step (D:\user_ws\market-center\src\app.ts:56:23)
+    at Object.next (D:\user_ws\market-center\src\app.ts:37:53)
+    at D:\user_ws\market-center\src\app.ts:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\user_ws\market-center\src\app.ts:27:12)
+    at D:\user_ws\market-center\src\app.ts:62:66
+2022-03-25 12:45:53 error: uncaughtException: Cannot read properties of undefined (reading 'getTickerPrice')
+TypeError: Cannot read properties of undefined (reading 'getTickerPrice')
+    at App.<anonymous> (D:\user_ws\market-center\src\app.ts:71:46)
+    at step (D:\user_ws\market-center\src\app.ts:56:23)
+    at Object.next (D:\user_ws\market-center\src\app.ts:37:53)
+    at D:\user_ws\market-center\src\app.ts:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\user_ws\market-center\src\app.ts:27:12)
+    at D:\user_ws\market-center\src\app.ts:62:66
+    at Layer.handle [as handle_request] (D:\user_ws\market-center\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\user_ws\market-center\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\user_ws\market-center\node_modules\express\lib\router\route.js:112:3)
+2022-03-25 12:48:36 error: uncaughtException: Cannot read properties of undefined (reading 'getTickerPrice')
+TypeError: Cannot read properties of undefined (reading 'getTickerPrice')
+    at App.<anonymous> (D:\user_ws\market-center\src\app.ts:73:46)
+    at step (D:\user_ws\market-center\src\app.ts:56:23)
+    at Object.next (D:\user_ws\market-center\src\app.ts:37:53)
+    at D:\user_ws\market-center\src\app.ts:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\user_ws\market-center\src\app.ts:27:12)
+    at D:\user_ws\market-center\src\app.ts:64:66
+    at Layer.handle [as handle_request] (D:\user_ws\market-center\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\user_ws\market-center\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\user_ws\market-center\node_modules\express\lib\router\route.js:112:3)
+2022-03-25 12:55:05 error: uncaughtException: Cannot read properties of undefined (reading 'getTickerPrice')
+TypeError: Cannot read properties of undefined (reading 'getTickerPrice')
+    at App.<anonymous> (D:\user_ws\market-center\src\app.ts:73:46)
+    at step (D:\user_ws\market-center\src\app.ts:56:23)
+    at Object.next (D:\user_ws\market-center\src\app.ts:37:53)
+    at D:\user_ws\market-center\src\app.ts:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\user_ws\market-center\src\app.ts:27:12)
+    at D:\user_ws\market-center\src\app.ts:64:66
+    at Layer.handle [as handle_request] (D:\user_ws\market-center\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\user_ws\market-center\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\user_ws\market-center\node_modules\express\lib\router\route.js:112:3)

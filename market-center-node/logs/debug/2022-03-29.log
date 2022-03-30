@@ -1,0 +1,403 @@
+2022-03-29 19:05:34 info: raw message received
+2022-03-29 19:05:34 info: 这是分割线:isWsFormattedKline: now date: 1648551934388==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411732,"open":47602.35,"close":47660,"high":47682.26,"low":47577.58,"volume":79.4024,"trades":3909,"final":false,"quoteVolume":3781332.8833429,"volumeActive":36.27146,"quoteVolumeActive":1727418.9299298,"ignored":0}
+2022-03-29 19:05:34 info: 1648551600000===1648552499999
+2022-03-29 19:05:34 info: result:[]
+2022-03-29 19:05:34 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:34 info: totalCount0
+2022-03-29 19:05:34 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:36 info: raw message received
+2022-03-29 19:05:36 info: 这是分割线:isWsFormattedKline: now date: 1648551936539==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411746,"open":47602.35,"close":47660.01,"high":47682.26,"low":47577.58,"volume":79.65713,"trades":3923,"final":false,"quoteVolume":3793473.3174775,"volumeActive":36.50492,"quoteVolumeActive":1738545.6358644,"ignored":0}
+2022-03-29 19:05:36 info: 1648551600000===1648552499999
+2022-03-29 19:05:36 info: result:[]
+2022-03-29 19:05:36 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:36 info: totalCount0
+2022-03-29 19:05:36 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:38 info: raw message received
+2022-03-29 19:05:38 info: 这是分割线:isWsFormattedKline: now date: 1648551938555==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411764,"open":47602.35,"close":47660,"high":47682.26,"low":47577.58,"volume":80.4281,"trades":3941,"final":false,"quoteVolume":3830217.7484555,"volumeActive":36.58272,"quoteVolumeActive":1742253.5846424,"ignored":0}
+2022-03-29 19:05:38 info: 1648551600000===1648552499999
+2022-03-29 19:05:38 info: result:[]
+2022-03-29 19:05:38 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:38 info: totalCount0
+2022-03-29 19:05:38 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:40 info: raw message received
+2022-03-29 19:05:40 info: 这是分割线:isWsFormattedKline: now date: 1648551940567==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411815,"open":47602.35,"close":47650.77,"high":47682.26,"low":47577.58,"volume":85.17563,"trades":3992,"final":false,"quoteVolume":4056476.4373454,"volumeActive":36.72507,"quoteVolumeActive":1749037.9307019,"ignored":0}
+2022-03-29 19:05:40 info: 1648551600000===1648552499999
+2022-03-29 19:05:40 info: result:[]
+2022-03-29 19:05:40 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:40 info: totalCount0
+2022-03-29 19:05:40 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:42 info: raw message received
+2022-03-29 19:05:42 info: 这是分割线:isWsFormattedKline: now date: 1648551942800==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411838,"open":47602.35,"close":47650.59,"high":47682.26,"low":47577.58,"volume":85.95358,"trades":4015,"final":false,"quoteVolume":4093546.2816929,"volumeActive":36.79359,"quoteVolumeActive":1752302.9614623,"ignored":0}
+2022-03-29 19:05:42 info: 1648551600000===1648552499999
+2022-03-29 19:05:42 info: result:[]
+2022-03-29 19:05:42 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:42 info: totalCount0
+2022-03-29 19:05:42 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:44 info: raw message received
+2022-03-29 19:05:44 info: 这是分割线:isWsFormattedKline: now date: 1648551944822==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411870,"open":47602.35,"close":47642.61,"high":47682.26,"low":47577.58,"volume":87.71498,"trades":4047,"final":false,"quoteVolume":4177473.7271643,"volumeActive":36.90715,"quoteVolumeActive":1757713.2758294,"ignored":0}
+2022-03-29 19:05:44 info: 1648551600000===1648552499999
+2022-03-29 19:05:44 info: result:[]
+2022-03-29 19:05:44 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:44 info: totalCount0
+2022-03-29 19:05:44 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:47 info: raw message received
+2022-03-29 19:05:47 info: 这是分割线:isWsFormattedKline: now date: 1648551947083==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411909,"open":47602.35,"close":47646.69,"high":47682.26,"low":47577.58,"volume":88.50706,"trades":4086,"final":false,"quoteVolume":4215212.1552488,"volumeActive":37.69481,"quoteVolumeActive":1795241.1055883,"ignored":0}
+2022-03-29 19:05:47 info: 1648551600000===1648552499999
+2022-03-29 19:05:47 info: result:[]
+2022-03-29 19:05:47 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:47 info: totalCount0
+2022-03-29 19:05:47 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:49 info: raw message received
+2022-03-29 19:05:49 info: 这是分割线:isWsFormattedKline: now date: 1648551949060==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411939,"open":47602.35,"close":47653.82,"high":47682.26,"low":47577.58,"volume":89.57343,"trades":4116,"final":false,"quoteVolume":4266024.8207067,"volumeActive":38.64025,"quoteVolumeActive":1840291.2732111,"ignored":0}
+2022-03-29 19:05:49 info: 1648551600000===1648552499999
+2022-03-29 19:05:49 info: result:[]
+2022-03-29 19:05:49 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:49 info: totalCount0
+2022-03-29 19:05:49 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:51 info: raw message received
+2022-03-29 19:05:51 info: 这是分割线:isWsFormattedKline: now date: 1648551951133==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411952,"open":47602.35,"close":47653.82,"high":47682.26,"low":47577.58,"volume":89.68239,"trades":4129,"final":false,"quoteVolume":4271217.1812319,"volumeActive":38.67005,"quoteVolumeActive":1841711.3573451,"ignored":0}
+2022-03-29 19:05:51 info: 1648551600000===1648552499999
+2022-03-29 19:05:51 info: result:[]
+2022-03-29 19:05:51 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:51 info: totalCount0
+2022-03-29 19:05:51 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:53 info: raw message received
+2022-03-29 19:05:53 info: 这是分割线:isWsFormattedKline: now date: 1648551953270==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411957,"open":47602.35,"close":47653.83,"high":47682.26,"low":47577.58,"volume":90.02813,"trades":4134,"final":false,"quoteVolume":4287693.0130434,"volumeActive":38.67852,"quoteVolumeActive":1842114.9852852,"ignored":0}
+2022-03-29 19:05:53 info: 1648551600000===1648552499999
+2022-03-29 19:05:53 info: result:[]
+2022-03-29 19:05:53 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:53 info: totalCount0
+2022-03-29 19:05:53 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:55 info: raw message received
+2022-03-29 19:05:55 info: 这是分割线:isWsFormattedKline: now date: 1648551955313==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411970,"open":47602.35,"close":47653.82,"high":47682.26,"low":47577.58,"volume":90.2557,"trades":4147,"final":false,"quoteVolume":4298537.5935152,"volumeActive":38.74396,"quoteVolumeActive":1845233.4519204,"ignored":0}
+2022-03-29 19:05:55 info: 1648551600000===1648552499999
+2022-03-29 19:05:55 info: result:[]
+2022-03-29 19:05:55 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:55 info: totalCount0
+2022-03-29 19:05:55 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:57 info: raw message received
+2022-03-29 19:05:57 info: 这是分割线:isWsFormattedKline: now date: 1648551957441==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411979,"open":47602.35,"close":47653.82,"high":47682.26,"low":47577.58,"volume":90.43369,"trades":4156,"final":false,"quoteVolume":4307019.4973591,"volumeActive":38.78617,"quoteVolumeActive":1847244.9200847,"ignored":0}
+2022-03-29 19:05:57 info: 1648551600000===1648552499999
+2022-03-29 19:05:57 info: result:[]
+2022-03-29 19:05:57 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:57 info: totalCount0
+2022-03-29 19:05:57 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:05:59 info: raw message received
+2022-03-29 19:05:59 info: 这是分割线:isWsFormattedKline: now date: 1648551959447==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308411990,"open":47602.35,"close":47653.82,"high":47682.26,"low":47577.58,"volume":90.54691,"trades":4167,"final":false,"quoteVolume":4312414.8636631,"volumeActive":38.86653,"quoteVolumeActive":1851074.3818635,"ignored":0}
+2022-03-29 19:05:59 info: 1648551600000===1648552499999
+2022-03-29 19:05:59 info: result:[]
+2022-03-29 19:05:59 info: totalCount{"totalCount":"0"}
+2022-03-29 19:05:59 info: totalCount0
+2022-03-29 19:05:59 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:01 info: raw message received
+2022-03-29 19:06:01 info: 这是分割线:isWsFormattedKline: now date: 1648551961611==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412072,"open":47602.35,"close":47653.83,"high":47682.26,"low":47577.58,"volume":90.7064,"trades":4249,"final":false,"quoteVolume":4320015.1719742,"volumeActive":38.92246,"quoteVolumeActive":1853739.6605754,"ignored":0}
+2022-03-29 19:06:01 info: 1648551600000===1648552499999
+2022-03-29 19:06:01 info: result:[]
+2022-03-29 19:06:01 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:01 info: totalCount0
+2022-03-29 19:06:01 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:04 info: raw message received
+2022-03-29 19:06:04 info: 这是分割线:isWsFormattedKline: now date: 1648551964049==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412096,"open":47602.35,"close":47651.46,"high":47682.26,"low":47577.58,"volume":91.15866,"trades":4273,"final":false,"quoteVolume":4341566.6294353,"volumeActive":38.94956,"quoteVolumeActive":1855031.0354809,"ignored":0}
+2022-03-29 19:06:04 info: 1648551600000===1648552499999
+2022-03-29 19:06:04 info: result:[]
+2022-03-29 19:06:04 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:04 info: totalCount0
+2022-03-29 19:06:04 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:06 info: raw message received
+2022-03-29 19:06:06 info: 这是分割线:isWsFormattedKline: now date: 1648551966081==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412112,"open":47602.35,"close":47650,"high":47682.26,"low":47577.58,"volume":91.53931,"trades":4289,"final":false,"quoteVolume":4359704.9168169,"volumeActive":39.18002,"quoteVolumeActive":1866012.6463551,"ignored":0}
+2022-03-29 19:06:06 info: 1648551600000===1648552499999
+2022-03-29 19:06:06 info: result:[]
+2022-03-29 19:06:06 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:06 info: totalCount0
+2022-03-29 19:06:06 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:08 info: raw message received
+2022-03-29 19:06:08 info: 这是分割线:isWsFormattedKline: now date: 1648551968240==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412141,"open":47602.35,"close":47650.01,"high":47682.26,"low":47577.58,"volume":94.74928,"trades":4318,"final":false,"quoteVolume":4512660.0125206,"volumeActive":41.70039,"quoteVolumeActive":1986108.3020588,"ignored":0}
+2022-03-29 19:06:08 info: 1648551600000===1648552499999
+2022-03-29 19:06:08 info: result:[]
+2022-03-29 19:06:08 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:08 info: totalCount0
+2022-03-29 19:06:08 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:10 info: raw message received
+2022-03-29 19:06:10 info: 这是分割线:isWsFormattedKline: now date: 1648551970393==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412153,"open":47602.35,"close":47650.01,"high":47682.26,"low":47577.58,"volume":94.90806,"trades":4330,"final":false,"quoteVolume":4520225.8810729,"volumeActive":41.85562,"quoteVolumeActive":1993505.0131111,"ignored":0}
+2022-03-29 19:06:10 info: 1648551600000===1648552499999
+2022-03-29 19:06:10 info: result:[]
+2022-03-29 19:06:10 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:10 info: totalCount0
+2022-03-29 19:06:10 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:12 info: raw message received
+2022-03-29 19:06:12 info: 这是分割线:isWsFormattedKline: now date: 1648551972646==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412160,"open":47602.35,"close":47650.01,"high":47682.26,"low":47577.58,"volume":94.95307,"trades":4337,"final":false,"quoteVolume":4522370.608023,"volumeActive":41.90063,"quoteVolumeActive":1995649.7400612,"ignored":0}
+2022-03-29 19:06:12 info: 1648551600000===1648552499999
+2022-03-29 19:06:12 info: result:[]
+2022-03-29 19:06:12 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:12 info: totalCount0
+2022-03-29 19:06:12 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:14 info: raw message received
+2022-03-29 19:06:14 info: 这是分割线:isWsFormattedKline: now date: 1648551974696==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412180,"open":47602.35,"close":47650.01,"high":47682.26,"low":47577.58,"volume":95.18665,"trades":4357,"final":false,"quoteVolume":4533500.695865,"volumeActive":41.98483,"quoteVolumeActive":1999661.8709032,"ignored":0}
+2022-03-29 19:06:14 info: 1648551600000===1648552499999
+2022-03-29 19:06:14 info: result:[]
+2022-03-29 19:06:14 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:14 info: totalCount0
+2022-03-29 19:06:14 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:16 info: raw message received
+2022-03-29 19:06:16 info: 这是分割线:isWsFormattedKline: now date: 1648551976913==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412220,"open":47602.35,"close":47647.86,"high":47682.26,"low":47577.58,"volume":96.15621,"trades":4397,"final":false,"quoteVolume":4579698.719955,"volumeActive":42.66887,"quoteVolumeActive":2032255.0258156,"ignored":0}
+2022-03-29 19:06:16 info: 1648551600000===1648552499999
+2022-03-29 19:06:16 info: result:[]
+2022-03-29 19:06:16 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:16 info: totalCount0
+2022-03-29 19:06:16 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:19 info: raw message received
+2022-03-29 19:06:19 info: 这是分割线:isWsFormattedKline: now date: 1648551979148==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412230,"open":47602.35,"close":47647.87,"high":47682.26,"low":47577.58,"volume":96.22833,"trades":4407,"final":false,"quoteVolume":4583135.0843352,"volumeActive":42.74057,"quoteVolumeActive":2035671.3780946,"ignored":0}
+2022-03-29 19:06:19 info: 1648551600000===1648552499999
+2022-03-29 19:06:19 info: result:[]
+2022-03-29 19:06:19 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:19 info: totalCount0
+2022-03-29 19:06:19 info: ws 返回 15m 相同的k线,不需要插入数据库
+2022-03-29 19:06:26 info: Server is runing at port 8888
+2022-03-29 19:06:26 info: 数据库链接成功!开始初始化wsMarket...
+2022-03-29 19:06:27 info: connection opened open: "spot_kline_btcusdt_15m"==="wss://stream.binance.com:9443/ws/btcusdt@kline_15m"
+2022-03-29 19:06:27 info: raw message received
+2022-03-29 19:06:27 info: 这是分割线:isWsFormattedKline: now date: 1648551987979==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":47602.35,"close":47650.42,"high":47682.26,"low":47577.58,"volume":101.31822,"trades":4498,"final":false,"quoteVolume":4825678.8169346,"volumeActive":47.23307,"quoteVolumeActive":2249747.3344995,"ignored":0}
+2022-03-29 19:06:27 info: 1648551600000===1648552499999
+2022-03-29 19:06:28 info: result:[]
+2022-03-29 19:06:28 info: totalCount{"totalCount":"0"}
+2022-03-29 19:06:28 info: totalCount0
+2022-03-29 19:06:28 info: 15m k线插入成功,结束
+2022-03-29 19:06:30 info: raw message received
+2022-03-29 19:06:30 info: 这是分割线:isWsFormattedKline: now date: 1648551990375==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412343,"open":47602.35,"close":47650.41,"high":47682.26,"low":47577.58,"volume":102.04145,"trades":4520,"final":false,"quoteVolume":4860141.0234579,"volumeActive":47.28297,"quoteVolumeActive":2252125.0904575,"ignored":0}
+2022-03-29 19:06:30 info: 1648551600000===1648552499999
+2022-03-29 19:06:30 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:30 info: 15m k线插入成功,结束
+2022-03-29 19:06:32 info: raw message received
+2022-03-29 19:06:32 info: 这是分割线:isWsFormattedKline: now date: 1648551992631==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412378,"open":47602.35,"close":47647.19,"high":47682.26,"low":47577.58,"volume":102.98842,"trades":4555,"final":false,"quoteVolume":4905262.638322,"volumeActive":47.81099,"quoteVolumeActive":2277284.506442,"ignored":0}
+2022-03-29 19:06:32 info: 1648551600000===1648552499999
+2022-03-29 19:06:32 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:32 info: 15m k线插入成功,结束
+2022-03-29 19:06:34 info: raw message received
+2022-03-29 19:06:34 info: 这是分割线:isWsFormattedKline: now date: 1648551994637==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412393,"open":47602.35,"close":47645.6,"high":47682.26,"low":47577.58,"volume":103.12181,"trades":4570,"final":false,"quoteVolume":4911618.216265,"volumeActive":47.84928,"quoteVolumeActive":2279108.8725225,"ignored":0}
+2022-03-29 19:06:34 info: 1648551600000===1648552499999
+2022-03-29 19:06:34 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:34 info: 15m k线插入成功,结束
+2022-03-29 19:06:39 info: Server is runing at port 8888
+2022-03-29 19:06:39 info: 数据库链接成功!开始初始化wsMarket...
+2022-03-29 19:06:40 info: connection opened open: "spot_kline_btcusdt_15m"==="wss://stream.binance.com:9443/ws/btcusdt@kline_15m"
+2022-03-29 19:06:40 info: raw message received
+2022-03-29 19:06:40 info: 这是分割线:isWsFormattedKline: now date: 1648552000821==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412425,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":103.41709,"trades":4602,"final":false,"quoteVolume":4925687.0114571,"volumeActive":48.09169,"quoteVolumeActive":2290658.6448426,"ignored":0}
+2022-03-29 19:06:40 info: 1648551600000===1648552499999
+2022-03-29 19:06:40 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:40 info: 15m k线插入成功,结束
+2022-03-29 19:06:42 info: raw message received
+2022-03-29 19:06:42 info: 这是分割线:isWsFormattedKline: now date: 1648552002969==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412443,"open":47602.35,"close":47645.6,"high":47682.26,"low":47577.58,"volume":103.68909,"trades":4620,"final":false,"quoteVolume":4938646.6154889,"volumeActive":48.17487,"quoteVolumeActive":2294621.8066824,"ignored":0}
+2022-03-29 19:06:42 info: 1648551600000===1648552499999
+2022-03-29 19:06:42 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:43 info: 15m k线插入成功,结束
+2022-03-29 19:06:44 info: raw message received
+2022-03-29 19:06:44 info: 这是分割线:isWsFormattedKline: now date: 1648552004990==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412462,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":103.85881,"trades":4639,"final":false,"quoteVolume":4946733.0278025,"volumeActive":48.28303,"quoteVolumeActive":2299775.15586,"ignored":0}
+2022-03-29 19:06:44 info: 1648551600000===1648552499999
+2022-03-29 19:06:45 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:45 info: 15m k线插入成功,结束
+2022-03-29 19:06:47 info: raw message received
+2022-03-29 19:06:47 info: 这是分割线:isWsFormattedKline: now date: 1648552007451==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412485,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":104.02773,"trades":4662,"final":false,"quoteVolume":4954781.323735,"volumeActive":48.40108,"quoteVolumeActive":2305399.7201205,"ignored":0}
+2022-03-29 19:06:47 info: 1648551600000===1648552499999
+2022-03-29 19:06:47 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:47 info: 15m k线插入成功,结束
+2022-03-29 19:06:49 info: raw message received
+2022-03-29 19:06:49 info: 这是分割线:isWsFormattedKline: now date: 1648552009792==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412513,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":105.37219,"trades":4690,"final":false,"quoteVolume":5018838.9304692,"volumeActive":48.7369,"quoteVolumeActive":2321400.0688707,"ignored":0}
+2022-03-29 19:06:49 info: 1648551600000===1648552499999
+2022-03-29 19:06:49 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:49 info: 15m k线插入成功,结束
+2022-03-29 19:06:51 info: raw message received
+2022-03-29 19:06:51 info: 这是分割线:isWsFormattedKline: now date: 1648552011836==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412519,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":105.39602,"trades":4696,"final":false,"quoteVolume":5019974.3253394,"volumeActive":48.75912,"quoteVolumeActive":2322458.7543249,"ignored":0}
+2022-03-29 19:06:51 info: 1648551600000===1648552499999
+2022-03-29 19:06:51 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:51 info: 15m k线插入成功,结束
+2022-03-29 19:06:54 info: raw message received
+2022-03-29 19:06:54 info: 这是分割线:isWsFormattedKline: now date: 1648552014305==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412527,"open":47602.35,"close":47645.61,"high":47682.26,"low":47577.58,"volume":105.59883,"trades":4704,"final":false,"quoteVolume":5029637.3297099,"volumeActive":48.78257,"quoteVolumeActive":2323576.0438794,"ignored":0}
+2022-03-29 19:06:54 info: 1648551600000===1648552499999
+2022-03-29 19:06:54 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:54 info: 15m k线插入成功,结束
+2022-03-29 19:06:56 info: raw message received
+2022-03-29 19:06:56 info: 这是分割线:isWsFormattedKline: now date: 1648552016818==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412538,"open":47602.35,"close":47645.6,"high":47682.26,"low":47577.58,"volume":105.85226,"trades":4715,"final":false,"quoteVolume":5041712.1543831,"volumeActive":48.80909,"quoteVolumeActive":2324839.6054566,"ignored":0}
+2022-03-29 19:06:56 info: 1648551600000===1648552499999
+2022-03-29 19:06:56 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:57 info: 15m k线插入成功,结束
+2022-03-29 19:06:58 info: raw message received
+2022-03-29 19:06:58 info: 这是分割线:isWsFormattedKline: now date: 1648552018872==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412568,"open":47602.35,"close":47649,"high":47682.26,"low":47577.58,"volume":107.32668,"trades":4745,"final":false,"quoteVolume":5111962.4098934,"volumeActive":50.26763,"quoteVolumeActive":2394333.2476065,"ignored":0}
+2022-03-29 19:06:58 info: 1648551600000===1648552499999
+2022-03-29 19:06:58 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:06:59 info: 15m k线插入成功,结束
+2022-03-29 19:07:00 info: raw message received
+2022-03-29 19:07:00 info: 这是分割线:isWsFormattedKline: now date: 1648552020897==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412649,"open":47602.35,"close":47650.01,"high":47682.26,"low":47577.58,"volume":107.94333,"trades":4826,"final":false,"quoteVolume":5141345.4827264,"volumeActive":50.68375,"quoteVolumeActive":2414161.0659395,"ignored":0}
+2022-03-29 19:07:00 info: 1648551600000===1648552499999
+2022-03-29 19:07:00 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:01 info: 15m k线插入成功,结束
+2022-03-29 19:07:02 info: raw message received
+2022-03-29 19:07:02 info: 这是分割线:isWsFormattedKline: now date: 1648552022929==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412671,"open":47602.35,"close":47650.42,"high":47682.26,"low":47577.58,"volume":108.18842,"trades":4848,"final":false,"quoteVolume":5153024.0321671,"volumeActive":50.91743,"quoteVolumeActive":2425295.9249032,"ignored":0}
+2022-03-29 19:07:02 info: 1648551600000===1648552499999
+2022-03-29 19:07:02 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:03 info: 15m k线插入成功,结束
+2022-03-29 19:07:05 info: raw message received
+2022-03-29 19:07:05 info: 这是分割线:isWsFormattedKline: now date: 1648552025195==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412687,"open":47602.35,"close":47653.03,"high":47682.26,"low":47577.58,"volume":108.35155,"trades":4864,"final":false,"quoteVolume":5160797.6464366,"volumeActive":51.05294,"quoteVolumeActive":2431753.3659216,"ignored":0}
+2022-03-29 19:07:05 info: 1648551600000===1648552499999
+2022-03-29 19:07:05 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:05 info: 15m k线插入成功,结束
+2022-03-29 19:07:07 info: raw message received
+2022-03-29 19:07:07 info: 这是分割线:isWsFormattedKline: now date: 1648552027490==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412708,"open":47602.35,"close":47653.79,"high":47682.26,"low":47577.58,"volume":109.10023,"trades":4885,"final":false,"quoteVolume":5196474.5335359,"volumeActive":51.78335,"quoteVolumeActive":2466559.622868,"ignored":0}
+2022-03-29 19:07:07 info: 1648551600000===1648552499999
+2022-03-29 19:07:07 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:07 info: 15m k线插入成功,结束
+2022-03-29 19:07:09 info: raw message received
+2022-03-29 19:07:09 info: 这是分割线:isWsFormattedKline: now date: 1648552029522==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412729,"open":47602.35,"close":47653.99,"high":47682.26,"low":47577.58,"volume":110.44725,"trades":4906,"final":false,"quoteVolume":5260665.399791,"volumeActive":52.0922,"quoteVolumeActive":2481277.5571302,"ignored":0}
+2022-03-29 19:07:09 info: 1648551600000===1648552499999
+2022-03-29 19:07:09 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:09 info: 15m k线插入成功,结束
+2022-03-29 19:07:11 info: raw message received
+2022-03-29 19:07:11 info: 这是分割线:isWsFormattedKline: now date: 1648552031600==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412739,"open":47602.35,"close":47653.98,"high":47682.26,"low":47577.58,"volume":110.54738,"trades":4916,"final":false,"quoteVolume":5265436.9934035,"volumeActive":52.15171,"quoteVolumeActive":2484113.4460751,"ignored":0}
+2022-03-29 19:07:11 info: 1648551600000===1648552499999
+2022-03-29 19:07:11 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:11 info: 15m k线插入成功,结束
+2022-03-29 19:07:15 info: Server is runing at port 8888
+2022-03-29 19:07:15 info: 数据库链接成功!开始初始化wsMarket...
+2022-03-29 19:07:15 info: connection opened open: "spot_kline_btcusdt_15m"==="wss://stream.binance.com:9443/ws/btcusdt@kline_15m"
+2022-03-29 19:07:16 info: raw message received
+2022-03-29 19:07:16 info: 这是分割线:isWsFormattedKline: now date: 1648552036154==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412756,"open":47602.35,"close":47653.99,"high":47682.26,"low":47577.58,"volume":110.69114,"trades":4933,"final":false,"quoteVolume":5272287.7297637,"volumeActive":52.17125,"quoteVolumeActive":2485044.6050397,"ignored":0}
+2022-03-29 19:07:16 info: 1648551600000===1648552499999
+2022-03-29 19:07:16 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:16 info: 15m k线插入成功,结束
+2022-03-29 19:07:18 info: raw message received
+2022-03-29 19:07:18 info: 这是分割线:isWsFormattedKline: now date: 1648552038289==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412762,"open":47602.35,"close":47653.98,"high":47682.26,"low":47577.58,"volume":110.78754,"trades":4939,"final":false,"quoteVolume":5276881.5734357,"volumeActive":52.17125,"quoteVolumeActive":2485044.6050397,"ignored":0}
+2022-03-29 19:07:18 info: 1648551600000===1648552499999
+2022-03-29 19:07:18 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:18 info: 15m k线插入成功,结束
+2022-03-29 19:07:20 info: raw message received
+2022-03-29 19:07:20 info: 这是分割线:isWsFormattedKline: now date: 1648552040508==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412772,"open":47602.35,"close":47653.98,"high":47682.26,"low":47577.58,"volume":110.81619,"trades":4949,"final":false,"quoteVolume":5278246.8601356,"volumeActive":52.18854,"quoteVolumeActive":2485868.5425268,"ignored":0}
+2022-03-29 19:07:20 info: 1648551600000===1648552499999
+2022-03-29 19:07:20 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:20 info: 15m k线插入成功,结束
+2022-03-29 19:07:22 info: raw message received
+2022-03-29 19:07:22 info: 这是分割线:isWsFormattedKline: now date: 1648552042636==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412790,"open":47602.35,"close":47653.98,"high":47682.26,"low":47577.58,"volume":111.06294,"trades":4967,"final":false,"quoteVolume":5290005.480639,"volumeActive":52.28238,"quoteVolumeActive":2490340.3929484,"ignored":0}
+2022-03-29 19:07:22 info: 1648551600000===1648552499999
+2022-03-29 19:07:22 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:22 info: 15m k线插入成功,结束
+2022-03-29 19:07:24 info: raw message received
+2022-03-29 19:07:24 info: 这是分割线:isWsFormattedKline: now date: 1648552044651==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412802,"open":47602.35,"close":47653.99,"high":47682.26,"low":47577.58,"volume":112.15327,"trades":4979,"final":false,"quoteVolume":5341964.0446964,"volumeActive":52.28678,"quoteVolumeActive":2490550.0705044,"ignored":0}
+2022-03-29 19:07:24 info: 1648551600000===1648552499999
+2022-03-29 19:07:24 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:24 info: 15m k线插入成功,结束
+2022-03-29 19:07:26 info: raw message received
+2022-03-29 19:07:26 info: 这是分割线:isWsFormattedKline: now date: 1648552046921==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412820,"open":47602.35,"close":47653.05,"high":47682.26,"low":47577.58,"volume":112.95622,"trades":4997,"final":false,"quoteVolume":5380227.4387665,"volumeActive":52.33075,"quoteVolumeActive":2492645.3751129,"ignored":0}
+2022-03-29 19:07:26 info: 1648551600000===1648552499999
+2022-03-29 19:07:26 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:27 info: 15m k线插入成功,结束
+2022-03-29 19:07:28 info: raw message received
+2022-03-29 19:07:28 info: 这是分割线:isWsFormattedKline: now date: 1648552048935==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412826,"open":47602.35,"close":47653.05,"high":47682.26,"low":47577.58,"volume":113.02168,"trades":5003,"final":false,"quoteVolume":5383346.8071977,"volumeActive":52.37403,"quoteVolumeActive":2494707.7991169,"ignored":0}
+2022-03-29 19:07:28 info: 1648551600000===1648552499999
+2022-03-29 19:07:28 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:29 info: 15m k线插入成功,结束
+2022-03-29 19:07:31 info: raw message received
+2022-03-29 19:07:31 info: 这是分割线:isWsFormattedKline: now date: 1648552051281==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412841,"open":47602.35,"close":47652.56,"high":47682.26,"low":47577.58,"volume":113.58788,"trades":5018,"final":false,"quoteVolume":5410327.8576671,"volumeActive":52.58763,"quoteVolumeActive":2504886.3877214,"ignored":0}
+2022-03-29 19:07:31 info: 1648551600000===1648552499999
+2022-03-29 19:07:31 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:31 info: 15m k线插入成功,结束
+2022-03-29 19:07:35 info: Server is runing at port 8888
+2022-03-29 19:07:36 info: 数据库链接成功!开始初始化wsMarket...
+2022-03-29 19:07:36 info: connection opened open: "spot_kline_btcusdt_15m"==="wss://stream.binance.com:9443/ws/btcusdt@kline_15m"
+2022-03-29 19:07:37 info: raw message received
+2022-03-29 19:07:37 info: 这是分割线:isWsFormattedKline: now date: 1648552057936==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412871,"open":47602.35,"close":47652.55,"high":47682.26,"low":47577.58,"volume":113.86387,"trades":5048,"final":false,"quoteVolume":5423479.4868835,"volumeActive":52.78182,"quoteVolumeActive":2514140.0383478,"ignored":0}
+2022-03-29 19:07:37 info: 1648551600000===1648552499999
+2022-03-29 19:07:37 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:38 info: 15m k线插入成功,结束
+2022-03-29 19:07:40 info: raw message received
+2022-03-29 19:07:40 info: 这是分割线:isWsFormattedKline: now date: 1648552060180==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412893,"open":47602.35,"close":47648.99,"high":47682.26,"low":47577.58,"volume":114.03991,"trades":5070,"final":false,"quoteVolume":5431867.9919339,"volumeActive":52.82834,"quoteVolumeActive":2516356.802875,"ignored":0}
+2022-03-29 19:07:40 info: 1648551600000===1648552499999
+2022-03-29 19:07:40 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:40 info: 15m k线插入成功,结束
+2022-03-29 19:07:42 info: raw message received
+2022-03-29 19:07:42 info: 这是分割线:isWsFormattedKline: now date: 1648552062358==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412900,"open":47602.35,"close":47648.53,"high":47682.26,"low":47577.58,"volume":114.1765,"trades":5077,"final":false,"quoteVolume":5438376.3379552,"volumeActive":52.89205,"quoteVolumeActive":2519392.4907213,"ignored":0}
+2022-03-29 19:07:42 info: 1648551600000===1648552499999
+2022-03-29 19:07:42 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:42 info: 15m k线插入成功,结束
+2022-03-29 19:07:44 info: raw message received
+2022-03-29 19:07:44 info: 这是分割线:isWsFormattedKline: now date: 1648552064386==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412906,"open":47602.35,"close":47648.53,"high":47682.26,"low":47577.58,"volume":114.18129,"trades":5083,"final":false,"quoteVolume":5438604.5744139,"volumeActive":52.89684,"quoteVolumeActive":2519620.72718,"ignored":0}
+2022-03-29 19:07:44 info: 1648551600000===1648552499999
+2022-03-29 19:07:44 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:44 info: 15m k线插入成功,结束
+2022-03-29 19:07:46 info: raw message received
+2022-03-29 19:07:46 info: 这是分割线:isWsFormattedKline: now date: 1648552066519==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412914,"open":47602.35,"close":47648.53,"high":47682.26,"low":47577.58,"volume":114.307,"trades":5091,"final":false,"quoteVolume":5444594.4700758,"volumeActive":52.91811,"quoteVolumeActive":2520634.2114131,"ignored":0}
+2022-03-29 19:07:46 info: 1648551600000===1648552499999
+2022-03-29 19:07:46 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:46 info: 15m k线插入成功,结束
+2022-03-29 19:07:48 info: raw message received
+2022-03-29 19:07:48 info: 这是分割线:isWsFormattedKline: now date: 1648552068600==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412932,"open":47602.35,"close":47648.52,"high":47682.26,"low":47577.58,"volume":114.41712,"trades":5109,"final":false,"quoteVolume":5449841.525273,"volumeActive":52.93559,"quoteVolumeActive":2521467.1077175,"ignored":0}
+2022-03-29 19:07:48 info: 1648551600000===1648552499999
+2022-03-29 19:07:48 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:48 info: 15m k线插入成功,结束
+2022-03-29 19:07:50 info: raw message received
+2022-03-29 19:07:50 info: 这是分割线:isWsFormattedKline: now date: 1648552070614==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412945,"open":47602.35,"close":47648.52,"high":47682.26,"low":47577.58,"volume":115.61153,"trades":5122,"final":false,"quoteVolume":5506753.4057942,"volumeActive":54.11039,"quoteVolumeActive":2577444.6007615,"ignored":0}
+2022-03-29 19:07:50 info: 1648551600000===1648552499999
+2022-03-29 19:07:50 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:50 info: 15m k线插入成功,结束
+2022-03-29 19:07:52 info: raw message received
+2022-03-29 19:07:52 info: 这是分割线:isWsFormattedKline: now date: 1648552072842==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412982,"open":47602.35,"close":47645.33,"high":47682.26,"low":47577.58,"volume":118.36228,"trades":5159,"final":false,"quoteVolume":5637814.7709556,"volumeActive":54.25584,"quoteVolumeActive":2584374.624058,"ignored":0}
+2022-03-29 19:07:52 info: 1648551600000===1648552499999
+2022-03-29 19:07:52 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:52 info: 15m k线插入成功,结束
+2022-03-29 19:07:54 info: raw message received
+2022-03-29 19:07:54 info: 这是分割线:isWsFormattedKline: now date: 1648552074965==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412989,"open":47602.35,"close":47643.42,"high":47682.26,"low":47577.58,"volume":118.38538,"trades":5166,"final":false,"quoteVolume":5638915.3503129,"volumeActive":54.26397,"quoteVolumeActive":2584761.9651439,"ignored":0}
+2022-03-29 19:07:54 info: 1648551600000===1648552499999
+2022-03-29 19:07:54 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:55 info: 15m k线插入成功,结束
+2022-03-29 19:07:57 info: raw message received
+2022-03-29 19:07:57 info: 这是分割线:isWsFormattedKline: now date: 1648552077240==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413005,"open":47602.35,"close":47643.43,"high":47682.26,"low":47577.58,"volume":118.61486,"trades":5182,"final":false,"quoteVolume":5649848.5632124,"volumeActive":54.35176,"quoteVolumeActive":2588944.5818636,"ignored":0}
+2022-03-29 19:07:57 info: 1648551600000===1648552499999
+2022-03-29 19:07:57 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:07:57 info: 15m k线插入成功,结束
+2022-03-29 19:07:59 info: raw message received
+2022-03-29 19:07:59 info: 这是分割线:isWsFormattedKline: now date: 1648552079915==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413016,"open":47602.35,"close":47643.43,"high":47682.26,"low":47577.58,"volume":118.68798,"trades":5193,"final":false,"quoteVolume":5653332.250669,"volumeActive":54.41038,"quoteVolumeActive":2591737.4397302,"ignored":0}
+2022-03-29 19:07:59 info: 1648551600000===1648552499999
+2022-03-29 19:07:59 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:00 info: 15m k线插入成功,结束
+2022-03-29 19:08:02 info: raw message received
+2022-03-29 19:08:02 info: 这是分割线:isWsFormattedKline: now date: 1648552082039==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413085,"open":47602.35,"close":47643.42,"high":47682.26,"low":47577.58,"volume":118.76602,"trades":5262,"final":false,"quoteVolume":5657050.3435508,"volumeActive":54.44888,"quoteVolumeActive":2593571.7117852,"ignored":0}
+2022-03-29 19:08:02 info: 1648551600000===1648552499999
+2022-03-29 19:08:02 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:02 info: 15m k线插入成功,结束
+2022-03-29 19:08:04 info: raw message received
+2022-03-29 19:08:04 info: 这是分割线:isWsFormattedKline: now date: 1648552084165==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413098,"open":47602.35,"close":47643.43,"high":47682.26,"low":47577.58,"volume":118.84271,"trades":5275,"final":false,"quoteVolume":5660704.1179944,"volumeActive":54.50526,"quoteVolumeActive":2596257.8483686,"ignored":0}
+2022-03-29 19:08:04 info: 1648551600000===1648552499999
+2022-03-29 19:08:04 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:04 info: 15m k线插入成功,结束
+2022-03-29 19:08:06 info: raw message received
+2022-03-29 19:08:06 info: 这是分割线:isWsFormattedKline: now date: 1648552086620==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413107,"open":47602.35,"close":47643.42,"high":47682.26,"low":47577.58,"volume":118.89619,"trades":5284,"final":false,"quoteVolume":5663252.0882107,"volumeActive":54.51673,"quoteVolumeActive":2596804.3185107,"ignored":0}
+2022-03-29 19:08:06 info: 1648551600000===1648552499999
+2022-03-29 19:08:06 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:06 info: 15m k线插入成功,结束
+2022-03-29 19:08:09 info: raw message received
+2022-03-29 19:08:09 info: 这是分割线:isWsFormattedKline: now date: 1648552089047==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413113,"open":47602.35,"close":47643.42,"high":47682.26,"low":47577.58,"volume":118.97503,"trades":5290,"final":false,"quoteVolume":5667008.2956552,"volumeActive":54.5379,"quoteVolumeActive":2597812.9299238,"ignored":0}
+2022-03-29 19:08:09 info: 1648551600000===1648552499999
+2022-03-29 19:08:09 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:09 info: 15m k线插入成功,结束
+2022-03-29 19:08:11 info: raw message received
+2022-03-29 19:08:11 info: 这是分割线:isWsFormattedKline: now date: 1648552091196==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413140,"open":47602.35,"close":47646.38,"high":47682.26,"low":47577.58,"volume":120.69548,"trades":5317,"final":false,"quoteVolume":5748977.873499,"volumeActive":56.11593,"quoteVolumeActive":2672996.7103685,"ignored":0}
+2022-03-29 19:08:11 info: 1648551600000===1648552499999
+2022-03-29 19:08:11 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:11 info: 15m k线插入成功,结束
+2022-03-29 19:08:13 info: raw message received
+2022-03-29 19:08:13 info: 这是分割线:isWsFormattedKline: now date: 1648552093789==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413151,"open":47602.35,"close":47646.38,"high":47682.26,"low":47577.58,"volume":120.76006,"trades":5328,"final":false,"quoteVolume":5752054.8773166,"volumeActive":56.17565,"quoteVolumeActive":2675842.1527793,"ignored":0}
+2022-03-29 19:08:13 info: 1648551600000===1648552499999
+2022-03-29 19:08:13 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:13 info: 15m k线插入成功,结束
+2022-03-29 19:08:15 info: raw message received
+2022-03-29 19:08:15 info: 这是分割线:isWsFormattedKline: now date: 1648552095799==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413178,"open":47602.35,"close":47643.44,"high":47682.26,"low":47577.58,"volume":121.9021,"trades":5355,"final":false,"quoteVolume":5806466.8890193,"volumeActive":56.19867,"quoteVolumeActive":2676938.9532366,"ignored":0}
+2022-03-29 19:08:15 info: 1648551600000===1648552499999
+2022-03-29 19:08:15 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:15 info: 15m k线插入成功,结束
+2022-03-29 19:08:17 info: raw message received
+2022-03-29 19:08:17 info: 这是分割线:isWsFormattedKline: now date: 1648552097849==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413185,"open":47602.35,"close":47643.43,"high":47682.26,"low":47577.58,"volume":121.98997,"trades":5362,"final":false,"quoteVolume":5810653.3180355,"volumeActive":56.28088,"quoteVolumeActive":2680855.720439,"ignored":0}
+2022-03-29 19:08:17 info: 1648551600000===1648552499999
+2022-03-29 19:08:17 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:17 info: 15m k线插入成功,结束
+2022-03-29 19:08:20 info: raw message received
+2022-03-29 19:08:20 info: 这是分割线:isWsFormattedKline: now date: 1648552100069==={"startTime":1648551600000,"endTime":1648552499999,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308413196,"open":47602.35,"close":47643.43,"high":47682.26,"low":47577.58,"volume":122.08473,"trades":5373,"final":false,"quoteVolume":5815168.0097208,"volumeActive":56.30673,"quoteVolumeActive":2682087.303363,"ignored":0}
+2022-03-29 19:08:20 info: 1648551600000===1648552499999
+2022-03-29 19:08:20 info: result:[{"id":1599,"symbol":"BTCUSDT","interval":"15m","firstTradeId":1308407824,"lastTradeId":1308412321,"open":"47602.35","high":"47682.26","close":"47650.42","low":"47577.58","volume":"101.31822","trades":"4498","final":0,"quoteVolume":"4825678.8169346","volumeActive":"47.23307","quoteVolumeActive":"2249747.3344995","startTime":"1648551600000","endTime":"1648552499999","ignored":0,"createdAt":"2022-03-29T03:06:27.714Z","updatedAt":"2022-03-29T03:06:27.714Z"}]
+2022-03-29 19:08:20 info: 15m k线插入成功,结束

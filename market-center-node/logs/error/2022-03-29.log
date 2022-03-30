@@ -1,0 +1,210 @@
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+QueryFailedError: Connection lost: The server closed the connection.
+    at Query.<anonymous> (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:403:13
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:15 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:863:27
+    at new Promise (<anonymous>)
+    at MysqlDriver.obtainMasterConnection (D:\user_ws\market-center\src\driver\mysql\MysqlDriver.ts:852:16)
+    at MysqlQueryRunner.connect (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:89:18)
+    at D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:191:55
+    at new Promise (<anonymous>)
+2022-03-29 18:51:17 error: uncaughtException: Connection lost: The server closed the connection.
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:94:28)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:532:35)
+    at Socket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1346:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+    --------------------
+    at Protocol._enqueue (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:116:18)
+    at Pool.getConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:48:16)
+    at Pool.releaseConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:157:10)
+    at Pool._removeConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:277:8)
+    at Pool._purgeConnection (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:258:8)
+    at Handshake.onConnect (D:\user_ws\market-center\node_modules\mysql\lib\Pool.js:57:14)
+    at Handshake.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:488:16)

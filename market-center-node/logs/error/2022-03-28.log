@@ -1,0 +1,428 @@
+2022-03-28 09:59:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/config/database.ts[0m:[93m28[0m:[93m5[0m - [91merror[0m[90m TS2740: [0mType 'Repository<unknown>' is missing the following properties from type 'DataSource': "@instanceof", name, options, isInitialized, and 34 more.
+
+[7m28[0m     return this.AppDataSource.getRepository(entity);
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/config/database.ts[0m:[93m28[0m:[93m5[0m - [91merror[0m[90m TS2740: [0mType 'Repository<unknown>' is missing the following properties from type 'DataSource': "@instanceof", name, options, isInitialized, and 34 more.
+
+[7m28[0m     return this.AppDataSource.getRepository(entity);
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 10:06:39 error: uncaughtException: WARN_DATA_TRUNCATED: Data truncated for column 'interval' at row 1
+QueryFailedError: WARN_DATA_TRUNCATED: Data truncated for column 'interval' at row 1
+    at Query.<anonymous> (D:\user_ws\market-center\src\driver\mysql\MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (D:\user_ws\market-center\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (D:\user_ws\market-center\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\user_ws\market-center\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\user_ws\market-center\node_modules\mysql\lib\Connection.js:88:28)
+2022-03-28 10:25:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m50[0m - [91merror[0m[90m TS7008: [0mMember '(Missing)' implicitly has an 'any' type.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                 [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m63[0m:[93m16[0m - [91merror[0m[90m TS2693: [0m'number' only refers to a type, but is being used as a value here.
+
+[7m63[0m     startTime: number;
+[7m  [0m [91m               ~~~~~~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m66[0m:[93m14[0m - [91merror[0m[90m TS2693: [0m'number' only refers to a type, but is being used as a value here.
+
+[7m66[0m     endTime: number;
+[7m  [0m [91m             ~~~~~~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m34[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                 ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m50[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                 ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m51[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                  ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m65[0m:[93m34[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m65[0m   @Column({ comment: 'endTime' })
+[7m  [0m [91m                                 [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m68[0m:[93m22[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m68[0m   @CreateDateColumn()
+[7m  [0m [91m                     [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m71[0m:[93m22[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m71[0m   @UpdateDateColumn()
+[7m  [0m [91m                     [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m73[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m73[0m }
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m50[0m - [91merror[0m[90m TS7008: [0mMember '(Missing)' implicitly has an 'any' type.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                 [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m63[0m:[93m16[0m - [91merror[0m[90m TS2693: [0m'number' only refers to a type, but is being used as a value here.
+
+[7m63[0m     startTime: number;
+[7m  [0m [91m               ~~~~~~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m66[0m:[93m14[0m - [91merror[0m[90m TS2693: [0m'number' only refers to a type, but is being used as a value here.
+
+[7m66[0m     endTime: number;
+[7m  [0m [91m             ~~~~~~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m34[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                 ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m50[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                 ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m51[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m62[0m   @Column({ comment: 'startTime',{type: 'bigint'}})
+[7m  [0m [91m                                                  ~[0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m65[0m:[93m34[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m65[0m   @Column({ comment: 'endTime' })
+[7m  [0m [91m                                 [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m68[0m:[93m22[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m68[0m   @CreateDateColumn()
+[7m  [0m [91m                     [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m71[0m:[93m22[0m - [91merror[0m[90m TS1146: [0mDeclaration expected.
+
+[7m71[0m   @UpdateDateColumn()
+[7m  [0m [91m                     [0m
+[96msrc/entity/kline.1d.entity.ts[0m:[93m73[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m73[0m }
+[7m  [0m [91m~[0m
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 10:25:38 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime' }, {type: 'bigint'})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime' }, {type: 'bigint'})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 10:25:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; type: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime', type: 'bigint' }, {type: 'bigint'})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/entity/kline.1d.entity.ts[0m:[93m62[0m:[93m13[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  The last overload gave the following error.
+    Argument of type '{ comment: string; type: string; }' is not assignable to parameter of type '(type?: any) => Function'.
+      Object literal may only specify known properties, and 'comment' does not exist in type '(type?: any) => Function'.
+
+[7m62[0m   @Column({ comment: 'startTime', type: 'bigint' }, {type: 'bigint'})
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~[0m
+
+  [96mnode_modules/typeorm/decorator/columns/Column.d.ts[0m:[93m74[0m:[93m25[0m
+    [7m74[0m export declare function Column(type: (type?: any) => Function, options?: ColumnEmbeddedOptions): PropertyDecorator;
+    [7m  [0m [96m                        ~~~~~~[0m
+    The last overload is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 14:02:57 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 14:03:00 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 14:03:23 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-03-28 14:03:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+[96msrc/binance-server/ws-market-Public.ts[0m:[93m9[0m:[93m10[0m - [91merror[0m[90m TS2724: [0m'"../entity/kline.1d.entity"' has no exported member named 'Kline15m'. Did you mean 'Kline1d'?
+
+[7m9[0m import { Kline15m } from '../entity/kline.1d.entity';
+[7m [0m [91m         ~~~~~~~~[0m
+
+  [96msrc/entity/kline.1d.entity.ts[0m:[93m4[0m:[93m14[0m
+    [7m4[0m export class Kline1d {
+    [7m [0m [96m             ~~~~~~~[0m
+    'Kline1d' is declared here.
+
+    at createTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:820:12)
+    at reportTSError (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:824:19)
+    at getOutput (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1014:36)
+    at Object.compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1322:43)
+    at Module.m._compile (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1454:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\user_ws\market-center\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)

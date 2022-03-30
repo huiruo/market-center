@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\user_ws\\market-center\\logs\\debug\\.19abdb04d3fc3b8c1e90834fdad83b030b6dfd14-audit.json",
+    "files": [
+        {
+            "date": 1648173968236,
+            "name": "D:\\user_ws\\market-center\\logs\\debug\\2022-03-25.log",
+            "hash": "3a7df72daaa9ebe83bae02bca8531459"
+        },
+        {
+            "date": 1648430698153,
+            "name": "D:\\user_ws\\market-center\\logs\\debug\\2022-03-28.log",
+            "hash": "1b6cae353ecf8d17e01fe0f09a3b5880"
+        },
+        {
+            "date": 1648515211695,
+            "name": "D:\\user_ws\\market-center\\logs\\debug\\2022-03-29.log",
+            "hash": "b60b5fe5255c7727f6e79b06013b2760"
+        },
+        {
+            "date": 1648600451014,
+            "name": "D:\\user_ws\\market-center\\logs\\debug\\2022-03-30.log",
+            "hash": "dd811ab6f3ebfe99728c6e04d3346d50"
+        }
+    ],
+    "hashType": "md5"
+}
