@@ -1,0 +1,14 @@
+app_name = "market center"
+
+log_level = "DEBUG"
+
+[mysql]
+host = "xx"
+port = xx
+username = "xx"
+password = "xx"
+database = "xx"
+
+[redis]
+ip = "127.0.0.1"
+port = 7381
