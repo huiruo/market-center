@@ -3,6 +3,7 @@ package binanceServer
 import (
 	"context"
 	"fmt"
+	"github.com/adshao/go-binance/v2"
 )
 
 var (
@@ -38,6 +39,17 @@ func restClient() {
 func wsServer() {
 	fmt.Println("wsServer init")
 
+	//多行查询
+	//rows := db.QueryRow("select * from kline_15m where trades = 11289")
+	rows, _ := DataSource..Query("select symbol, `interval` from kline_15m where trades = 11289")
+	var symbol, interval string
+	for rows.Next() {
+		rows.Columns()
+		rows.Scan(&symbol, &interval)
+		fmt.Println(symbol, "--")
+		fmt.Println(interval, "--")
+	}
+
 	wsKlineHandler := func(event *binance.WsKlineEvent) {
 		fmt.Println(event)
 	}
@@ -51,8 +63,6 @@ func wsServer() {
 		fmt.Println(err)
 		return
 	}
-
-	fmt.Println("donec")
 
 	fmt.Println(doneC)
 }

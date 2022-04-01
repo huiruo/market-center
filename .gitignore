@@ -8,8 +8,6 @@ yarn.lock
 
 .vscode/
 
-logs/*
-
 .idea/
 
 # Binaries for programs and plugins
@@ -28,3 +26,6 @@ logs/*
 
 # go project
 market-center-go/src/config/main.toml
+
+# node project
+market-center-node/logs/*
