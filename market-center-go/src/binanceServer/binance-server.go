@@ -2,8 +2,10 @@ package binanceServer
 
 import (
 	"context"
+	"database/sql"
 	"fmt"
 	"github.com/adshao/go-binance/v2"
+	"market-center-go/src/utils"
 )
 
 var (
@@ -11,6 +13,41 @@ var (
 	secretKey = ""
 	symbol    = "BTCUSDT"
 )
+
+var DataS *sql.DB
+
+func InitDb() {
+	fmt.Println("初始化数据库=======")
+	fmt.Println("初始化数据库=======")
+	var err error
+	DataS, err = sql.Open("mysql", utils.GetDataSourceConfig())
+	if err != nil {
+		fmt.Println("Connect fail")
+		return
+	}
+
+	fmt.Println(DataS)
+	fmt.Println("初始化数据库结束=======")
+	//设置数据库最大连接数
+	DataS.SetConnMaxLifetime(500)
+	//设置上数据库最大闲置连接数
+	DataS.SetMaxIdleConns(10)
+
+	//关闭数据库
+	defer DataS.Close()
+
+	// 验证连接
+	errDb := DataS.Ping()
+	if errDb != nil {
+		fmt.Println("open database fail")
+		return
+	} else {
+		fmt.Println("connect success")
+	}
+
+	//queryTest()
+	//queryTest2()
+}
 
 func BinanceServer() {
 	fmt.Println("BinanceServer init")
@@ -36,12 +73,11 @@ func restClient() {
 	}
 }
 
-func wsServer() {
-	fmt.Println("wsServer init")
-
-	//多行查询
-	//rows := db.QueryRow("select * from kline_15m where trades = 11289")
-	rows, _ := DataSource..Query("select symbol, `interval` from kline_15m where trades = 11289")
+func queryTest2() {
+	fmt.Println(" ======多行查询queryTest2:======")
+	fmt.Println(DataS)
+	fmt.Println(" ======多行查询queryTest2 end")
+	rows, _ := DataS.Query("select symbol, `interval` from kline_15m where trades = 11289")
 	var symbol, interval string
 	for rows.Next() {
 		rows.Columns()
@@ -49,6 +85,11 @@ func wsServer() {
 		fmt.Println(symbol, "--")
 		fmt.Println(interval, "--")
 	}
+}
+
+func wsServer() {
+	fmt.Println("wsServer init")
+	//queryTest2()
 
 	wsKlineHandler := func(event *binance.WsKlineEvent) {
 		fmt.Println(event)
@@ -64,5 +105,6 @@ func wsServer() {
 		return
 	}
 
+	queryTest2()
 	fmt.Println(doneC)
 }
