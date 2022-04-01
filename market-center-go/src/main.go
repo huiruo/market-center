@@ -36,7 +36,7 @@ func init() {
 }
 
 func main() {
-	binanceServer.BinanceServer()
+	//binanceServer.BinanceServer()
 
 	// test
 

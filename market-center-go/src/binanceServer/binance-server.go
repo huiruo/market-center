@@ -43,16 +43,8 @@ func InitDb() {
 		return
 	} else {
 		fmt.Println("connect success")
+		wsServer()
 	}
-
-	//queryTest()
-	//queryTest2()
-}
-
-func BinanceServer() {
-	fmt.Println("BinanceServer init")
-	//restClient()
-	wsServer()
 }
 
 func restClient() {
@@ -88,10 +80,8 @@ func queryTest2() {
 }
 
 func wsServer() {
-	fmt.Println("wsServer init")
-	//queryTest2()
-
 	wsKlineHandler := func(event *binance.WsKlineEvent) {
+		fmt.Println("wsServer-")
 		fmt.Println(event)
 	}
 
