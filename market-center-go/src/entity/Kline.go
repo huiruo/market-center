@@ -1,6 +1,6 @@
 package entity
 
-type KlineAll struct {
+type Kline struct {
 	id                int64
 	symbol            string
 	interval          string
