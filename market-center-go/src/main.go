@@ -22,7 +22,6 @@ func init() {
 }
 
 func main() {
-
 	server.WsServer()
 	router := gin.Default()
 	router.GET("/", func(c *gin.Context) {

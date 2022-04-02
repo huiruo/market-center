@@ -12,13 +12,42 @@ var (
 	symbol    = "BTCUSDT"
 )
 
+type WsKlineEvent struct {
+	Event  string  `json:"e"`
+	Time   int64   `json:"E"`
+	Symbol string  `json:"s"`
+	Kline  WsKline `json:"k"`
+}
+
+type WsKline struct {
+	StartTime            int64  `json:"startTime"`
+	EndTime              int64  `json:"endTime"`
+	Symbol               string `json:"symbol"`
+	Interval             string `json:"interval"`
+	FirstTradeID         int64  `json:"firstTradeId"`
+	LastTradeID          int64  `json:"lastTradeId"`
+	Open                 string `json:"open"`
+	Close                string `json:"close"`
+	High                 string `json:"high"`
+	Low                  string `json:"low"`
+	Volume               string `json:"volume"`
+	TradeNum             int64  `json:"trades"`
+	IsFinal              bool   `json:"final"`
+	QuoteVolume          string `json:"quoteVolume"`
+	ActiveBuyVolume      string `json:"quoteVolumeActive"`
+	ActiveBuyQuoteVolume string `json:"activeBuyQuoteVolume"`
+}
+
 func WsServer() {
-
-	fmt.Println("start web socket====>")
-
 	wsKlineHandler := func(event *binance.WsKlineEvent) {
-		fmt.Println(event)
-		queryTest()
+		Kline := event.Kline
+		interval := Kline.Interval
+		if interval == "15m" {
+			isSameKline := doSqlWork(Kline, Kline.StartTime, Kline.EndTime)
+			fmt.Println("<======doSqlWork 15m end======>", isSameKline)
+		} else {
+
+		}
 	}
 
 	errHandler := func(err error) {
