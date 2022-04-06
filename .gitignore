@@ -29,3 +29,12 @@ market-center-go/src/config/main.toml
 
 # node project
 market-center-node/logs/*
+
+# crawler-kline
+crawler-kline/.env
+crawler-kline/node_modules
+
+# .env.local
+crawler-kline/.env.development.local
+crawler-kline/.env.test.local
+crawler-kline/.env.production.local
