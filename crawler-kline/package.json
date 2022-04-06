@@ -1,0 +1,26 @@
+{
+  "name": "crawler-kline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build:prod": "tsc",
+    "clean": "tie-clean",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "stop": "pm2 stop ecosystem.config.js --env production",
+    "restart": "pm2 restart ecosystem.config.js --env production",
+    "reload": "pm2 reload ecosystem.config.js --env production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tsed/logger": "^5.17.0",
+    "rsmq": "^0.12.4",
+    "source-map-support": "^0.5.21",
+    "tie-cli": "^2.27.0",
+    "trading-signals": "^3.6.1",
+    "binance": "^2.0.27",
+    "dotenv": "^16.0.0"
+  }
+}
